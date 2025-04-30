@@ -144,6 +144,18 @@
 									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
 									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
 								</InputField>
+								<InputField name="Реквизит1" id="306">
+									<DataPath>Реквизит1</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="Реквизит1КонтекстноеМеню" id="307"/>
+									<ExtendedTooltip name="Реквизит1РасширеннаяПодсказка" id="308"/>
+								</InputField>
+								<InputField name="Реквизит2" id="309">
+									<DataPath>Реквизит2</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="Реквизит2КонтекстноеМеню" id="310"/>
+									<ExtendedTooltip name="Реквизит2РасширеннаяПодсказка" id="311"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<InputField name="Заказ" id="248">
