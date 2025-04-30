@@ -1543,7 +1543,7 @@
 		<Metadata name="Document.ИС_WB_СборочноеЗадание.Template.ПФ_MXL_ШтрихкодТовара58х40" id="fe99bfd0-7e4f-42ca-8c17-01a3db0ebba4" configVersion="477fb8d682f1a4b30ac2aed0d8a1eda30e153ebc"/>
 		<Metadata name="Document.ИС_WB_СборочноеЗадание.Template.ПФ_MXL_ШтрихкодТовара58х40.Template" id="fe99bfd0-7e4f-42ca-8c17-01a3db0ebba4.0" configVersion="a02dca4918fe342671d3458b8c3344e458961da1"/>
 		<Metadata name="Document.ИС_WB_СборочноеЗадание.Template.Эталон" id="384f5cbc-139c-4a71-80b9-20214b2a733d" configVersion="7f9cf2ddc6b6c7ce6d9a1fde12c9b0956ed2c94c"/>
-		<Metadata name="Document.ИС_WB_СборочноеЗадание.Template.Эталон.Template" id="384f5cbc-139c-4a71-80b9-20214b2a733d.0" configVersion="819c6fa0a182655e1bf79d4b48984dead1cb7559"/>
+		<Metadata name="Document.ИС_WB_СборочноеЗадание.Template.Эталон.Template" id="384f5cbc-139c-4a71-80b9-20214b2a733d.0" configVersion="9de9994d97e6985cbcce1e76c94476c8f10f35e7"/>
 		<Metadata name="Document.ИС_WB_УпаковкаТоваров" id="3839eac7-d3fb-49d2-92f3-892610be16cc" configVersion="953897bffe7bf06e8d9f88fe7d985fd6b8f9418e">
 			<Metadata name="Document.ИС_WB_УпаковкаТоваров.Attribute.ПечататьЭтикеткиЗаказа" id="012c17ae-fd77-41e2-9c75-0d75c093b910"/>
 			<Metadata name="Document.ИС_WB_УпаковкаТоваров.TabularSection.Товары.Attribute.КоличествоФакт" id="02ab46fb-1e56-4afb-97e4-c42ac2db192e"/>
@@ -2928,7 +2928,7 @@
 		<Metadata name="StyleItem.ЦветТекстаОтложенаПриПроверкеГосИС" id="7240ed59-3ce7-4a96-94b2-143a476138d4" configVersion="b09292c7478943e7447c7961347e92f9b6a3379c"/>
 		<Metadata name="StyleItem.ЦветТекстаПроблемаГосИС" id="50a0bd0b-6bcf-4a70-bc06-f5eb9d52a274" configVersion="81306a2f6deae735bc9020b13b9b8aaa9b4085d3"/>
 		<Metadata name="StyleItem.ЦветТекстаТребуетВниманияГосИС" id="7c39fc96-b91e-4583-b790-c9e880d8eaa7" configVersion="8f21f2c436f9147817a524a6d6c0a6b11728e7f8"/>
-		<Metadata name="Subsystem.ИС_МП_Маркетплейс" id="13594531-f9a4-4004-a1c9-0468f2a04bb5" configVersion="20481ad6c9c5d3001911b3f88eb138ebf0849756"/>
+		<Metadata name="Subsystem.ИС_МП_Маркетплейс" id="13594531-f9a4-4004-a1c9-0468f2a04bb5" configVersion="edad98beb02f1c4b21a4a23479aaca72a97a9b0d"/>
 		<Metadata name="Subsystem.ИС_МП_Маркетплейс.CommandInterface" id="13594531-f9a4-4004-a1c9-0468f2a04bb5.1" configVersion="38469d69336d456fe6bf19b722f904f279663b74"/>
 		<Metadata name="Subsystem.ИС_МП_Маркетплейс.Subsystem.Настройки" id="99cf7eb6-0274-4d63-9c8e-72081adfba81" configVersion="b111c9c52ef4cf8dfff138e580e70ba74f58be6d"/>
 		<Metadata name="Subsystem.ИС_МП_Маркетплейс.Subsystem.Настройки.CommandInterface" id="99cf7eb6-0274-4d63-9c8e-72081adfba81.1" configVersion="53dc1ea2a2856c76cf23d8ec2062ed58249cb2de"/>
@@ -2961,5 +2961,6 @@
 		<Metadata name="Subsystem.ИС_МП_Маркетплейс.Subsystem.УправлениеМаркетплейсами.Subsystem.Служебные.Subsystem.Яндекс.CommandInterface" id="3435aaae-3f6e-4794-a7b8-43a7b0aaddce.1" configVersion="fc3b4cd3e9dcdf06467f20bd6e9aff635508ac0d"/>
 		<Metadata name="Subsystem.ИС_МП_Маркетплейс.Subsystem.УправлениеОстаткамиИЦенами" id="cd499576-92f8-44eb-a37d-483be75cb0db" configVersion="9c16b985bc81076403c717db566da3258e7a4500"/>
 		<Metadata name="Subsystem.ИС_МП_Маркетплейс.Subsystem.УправлениеОстаткамиИЦенами.CommandInterface" id="cd499576-92f8-44eb-a37d-483be75cb0db.1" configVersion="2d3ecf75754036a665a6a35b272b16120628b518"/>
+		<Metadata name="Subsystem.ИС_МП_Маркетплейс.Subsystem.ХУЙ" id="abe7e102-d9de-4e79-a53b-a92cc2aff93b" configVersion="b6a13ceaf16cf552ff6c1a0c1f4008a90fe57467"/>
 	</ConfigVersions>
 </ConfigDumpInfo>

@@ -74,6 +74,7 @@
 			<Subsystem>РаботаСоСборочнымиЗаданиями</Subsystem>
 			<Subsystem>УправлениеОстаткамиИЦенами</Subsystem>
 			<Subsystem>УправлениеМаркетплейсами</Subsystem>
+			<Subsystem>ХУЙ</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>
