@@ -138,6 +138,12 @@
 									<ContextMenu name="Реквизит1КонтекстноеМеню" id="307"/>
 									<ExtendedTooltip name="Реквизит1РасширеннаяПодсказка" id="308"/>
 								</InputField>
+								<InputField name="Реквизит2" id="309">
+									<DataPath>Реквизит2</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="Реквизит2КонтекстноеМеню" id="310"/>
+									<ExtendedTooltip name="Реквизит2РасширеннаяПодсказка" id="311"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<InputField name="Заказ" id="248">
@@ -945,6 +951,15 @@
 			</Type>
 		</Attribute>
 		<Attribute name="Реквизит1" id="10">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Реквизит2" id="11">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
