@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>Остатки</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Склад</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаСкладе</dataPath>
+			<field>НаСкладе</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В наличии</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоВсемСкладам</dataPath>
+			<field>ПоВсемСкладам</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По всем складам</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Бренд</dataPath>
+			<field>Бренд</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бренд</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<item xsi:type="DataSetObject">
+			<name>ОстаткиFBO</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Склад</dataPath>
+				<field>Склад</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Склад</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>0</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НаСкладе</dataPath>
+				<field>НаСкладе</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>На складе</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>0</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПоВсемСкладам</dataPath>
+				<field>ПоВсемСкладам</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>По всем складам</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:decimal</v8:Type>
+					<v8:NumberQualifiers>
+						<v8:Digits>0</v8:Digits>
+						<v8:FractionDigits>0</v8:FractionDigits>
+						<v8:AllowedSign>Any</v8:AllowedSign>
+					</v8:NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Бренд</dataPath>
+				<field>Бренд</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Бренд</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>20</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
+				</valueType>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>ОстаткиFBO</objectName>
+		</item>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ЗагруженностьСклада</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Загруженность склада</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=1; ЧФ=Ч%</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>НаСкладе</dataPath>
+		<expression>Сумма(НаСкладе)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЗагруженностьСклада</dataPath>
+		<expression>Сумма(НаСкладе) * 100 / Сумма(ПоВсемСкладам)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПоВсемСкладам</dataPath>
+		<expression>Сумма(ПоВсемСкладам)</expression>
+	</totalField>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗагруженностьСклада</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Склад</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ЗагруженностьСклада</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Яркий</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:ChartType">Column3D</dcscor:value>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы.ВидПодписей</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:ChartLabelType">Value</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы.ОписаниеПалитрыЦветов</dcscor:parameter>
+						<dcscor:value xmlns:d7p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d7p1:ChartColorPaletteDescription">
+							<d7p1:colorPalette>Custom</d7p1:colorPalette>
+							<d7p1:gradientPaletteMaxColors>10</d7p1:gradientPaletteMaxColors>
+							<d7p1:customPalette>
+								<v8:Value xsi:type="v8ui:Color">#4CC8FF</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#FF8779</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#FFC000</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#5FC26E</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#9E99F2</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#ECCB66</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C765FF</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#71D1C8</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#B1FF4C</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#66B4EC</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#A766EC</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#FF79E8</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#AB6D90</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C3996B</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#B1C0C9</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#B49EB4</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#9F6D4D</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#FAAF40</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#B0B073</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#AC7A74</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C1B49A</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#74CCE5</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C28B9A</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#999889</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#6E9B74</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#8FA1C9</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#7B7C7F</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#809EAD</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C26558</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#D8D13E</v8:Value>
+							</d7p1:customPalette>
+						</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы.ОписаниеПалитрыЦветовИнформационныхИнтервалов</dcscor:parameter>
+						<dcscor:value xmlns:d7p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d7p1:ChartColorPaletteDescription">
+							<d7p1:colorPalette>Custom</d7p1:colorPalette>
+							<d7p1:customPalette>
+								<v8:Value xsi:type="v8ui:Color">#4CC8FF</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#FF8779</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#FFC000</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#5FC26E</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#9E99F2</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#ECCB66</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C765FF</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#71D1C8</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#B1FF4C</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#66B4EC</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#A766EC</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#FF79E8</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#AB6D90</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C3996B</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#B1C0C9</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#B49EB4</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#9F6D4D</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#FAAF40</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#B0B073</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#AC7A74</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C1B49A</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#74CCE5</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C28B9A</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#999889</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#6E9B74</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#8FA1C9</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#7B7C7F</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#809EAD</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#C26558</v8:Value>
+								<v8:Value xsi:type="v8ui:Color">#D8D13E</v8:Value>
+							</d7p1:customPalette>
+						</dcscor:value>
+					</dcscor:item>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemChart">
+				<dcsset:point>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Склад</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:point>
+				<dcsset:series>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЗагруженностьСклада</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:series>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>По брендам</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>По брендам</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Склад</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Бренд</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗагруженностьСклада</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НаСкладе</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПоВсемСкладам</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Склад</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

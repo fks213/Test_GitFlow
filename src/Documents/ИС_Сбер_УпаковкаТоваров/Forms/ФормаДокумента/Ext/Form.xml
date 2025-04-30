@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Профиль" id="7">
+			<DataPath>Объект.Профиль</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПрофильКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПрофильРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="НастройкиПечатиЭтикеток" id="10">
+			<DataPath>Объект.НастройкаПечатиЭтикеток</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НастройкиПечатиЭтикетокКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="НастройкиПечатиЭтикетокРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<Table name="ДеревоЗаказы" id="19">
+			<Representation>Tree</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДеревоЗаказы</DataPath>
+			<ContextMenu name="ДеревоЗаказыКонтекстноеМеню" id="20"/>
+			<AutoCommandBar name="ДеревоЗаказыКоманднаяПанель" id="21">
+				<ChildItems>
+					<Button name="ДеревоЗаказыВвестиШтрихкодВручную" id="50">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВвестиШтрихкодВручную</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.ИС_WB_ШК</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ДеревоЗаказыВвестиШтрихкодВручнуюРасширеннаяПодсказка" id="51"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоЗаказыРасширеннаяПодсказка" id="22"/>
+			<SearchStringAddition name="ДеревоЗаказыСтрокаПоиска" id="23">
+				<AdditionSource>
+					<Item>ДеревоЗаказы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоЗаказыСтрокаПоискаКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ДеревоЗаказыСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДеревоЗаказыСостояниеПросмотра" id="26">
+				<AdditionSource>
+					<Item>ДеревоЗаказы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоЗаказыСостояниеПросмотраКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ДеревоЗаказыСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДеревоЗаказыУправлениеПоиском" id="29">
+				<AdditionSource>
+					<Item>ДеревоЗаказы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДеревоЗаказыУправлениеПоискомКонтекстноеМеню" id="30"/>
+				<ExtendedTooltip name="ДеревоЗаказыУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ДеревоЗаказыЗаказ" id="32">
+					<DataPath>ДеревоЗаказы.Заказ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗаказыЗаказКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДеревоЗаказыЗаказРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ДеревоЗаказыНоменклатура" id="35">
+					<DataPath>ДеревоЗаказы.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗаказыНоменклатураКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ДеревоЗаказыНоменклатураРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ДеревоЗаказыХарактеристика" id="38">
+					<DataPath>ДеревоЗаказы.Характеристика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗаказыХарактеристикаКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ДеревоЗаказыХарактеристикаРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<CheckBoxField name="ДеревоЗаказыМаркировкаПередана" id="55">
+					<DataPath>ДеревоЗаказы.МаркировкаПередана</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоЗаказыМаркировкаПереданаКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ДеревоЗаказыМаркировкаПереданаРасширеннаяПодсказка" id="57"/>
+				</CheckBoxField>
+				<CheckBoxField name="ДеревоЗаказыМаркируемыйТовар" id="52">
+					<DataPath>ДеревоЗаказы.МаркируемыйТовар</DataPath>
+					<Enabled>false</Enabled>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоЗаказыМаркируемыйТоварКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ДеревоЗаказыМаркируемыйТоварРасширеннаяПодсказка" id="54"/>
+				</CheckBoxField>
+				<InputField name="ДеревоЗаказыКоличествоЗаказ" id="41">
+					<DataPath>ДеревоЗаказы.КоличествоЗаказ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗаказыКоличествоЗаказКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДеревоЗаказыКоличествоЗаказРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="ДеревоЗаказыКоличествоФакт" id="44">
+					<DataPath>ДеревоЗаказы.КоличествоФакт</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДеревоЗаказыКоличествоФактКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ДеревоЗаказыКоличествоФактРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<CheckBoxField name="ДеревоЗаказыЭтикеткаРаспечатана" id="47">
+					<DataPath>ДеревоЗаказы.ЭтикеткаРаспечатана</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДеревоЗаказыЭтикеткаРаспечатанаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ДеревоЗаказыЭтикеткаРаспечатанаРасширеннаяПодсказка" id="49"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<InputField name="Комментарий" id="16">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Ответственный" id="13">
+			<DataPath>Объект.Ответственный</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОтветственныйКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="15"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ИС_Сбер_УпаковкаТоваров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Save>
+				<Field>Объект.НастройкаПечатиЭтикеток</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПоддерживаемыеТипыПодключаемогоОборудования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поддерживаемые типы подключаемого оборудования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьПодключаемоеОборудование" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать подключаемое оборудование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтикеткаРаспечатана" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этикетка распечатана</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоЗаказы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево заказы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Заказ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ИС_Сбер_Отправление</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоЗаказ" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество заказ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоФакт" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество факт</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтикеткаРаспечатана" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Этикетка распечатана</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МаркируемыйТовар" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Маркируемый товар</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="МаркировкаПередана" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Маркировка передана</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВвестиШтрихкодВручную" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести штрихкод вручную</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ввести штрихкод вручную</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВвестиШтрихкодВручную</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Профиль" id="1">
+			<DataPath>Профиль</DataPath>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
+			<ContextMenu name="ПрофильКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПрофильРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ПрофильПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Pages name="Маркетплейсы" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маркетплейсы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маркетплейсы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="МаркетплейсыРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<Page name="Ozon" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ozon</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ozon</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="OzonРасширеннаяПодсказка" id="61"/>
+					<ChildItems>
+						<UsualGroup name="НастройкиСозданияНоменклатуры" id="4">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки создания номенклатуры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройки создания номенклатуры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<Collapsed>true</Collapsed>
+							<ExtendedTooltip name="НастройкиСозданияНоменклатурыРасширеннаяПодсказка" id="5"/>
+							<ChildItems>
+								<InputField name="ВидНоменклатуры" id="9">
+									<DataPath>ВидНоменклатуры</DataPath>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<DropListButton>false</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+									<OpenButton>true</OpenButton>
+									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+									<ContextMenu name="ВидНоменклатурыКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ВидНоменклатурыРасширеннаяПодсказка" id="11">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Вид номенклатуры - это справочник, предназначенный для объединения номенклатуры по общим признакам учета. Он содержит в себе ассортиментные группы продаваемых товаров.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</InputField>
+								<InputField name="ГруппаНоменклатуры" id="6">
+									<DataPath>ГруппаНоменклатуры</DataPath>
+									<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+									<ContextMenu name="ГруппаНоменклатурыКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="ГруппаНоменклатурыРасширеннаяПодсказка" id="8"/>
+								</InputField>
+								<InputField name="СтавкаНДС" id="55">
+									<DataPath>СтавкаНДС</DataPath>
+									<ContextMenu name="СтавкаНДСКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="СтавкаНДСРасширеннаяПодсказка" id="57"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="ДанныеДляСозданияНоменклатурыOzon" id="12">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ДанныеДляСозданияНоменклатурыOzon</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonКонтекстноеМеню" id="13"/>
+							<AutoCommandBar name="ДанныеДляСозданияНоменклатурыOzonКоманднаяПанель" id="14">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ВыбратьВсе" id="50">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ВыбратьВсе</CommandName>
+										<ExtendedTooltip name="ВыбратьВсеРасширеннаяПодсказка" id="51"/>
+									</Button>
+									<Button name="ИсключитьВсе" id="48">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ИсключитьВсе</CommandName>
+										<ExtendedTooltip name="ИсключитьВсеРасширеннаяПодсказка" id="49"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonРасширеннаяПодсказка" id="15"/>
+							<SearchStringAddition name="ДанныеДляСозданияНоменклатурыOzonСтрокаПоиска" id="16">
+								<AdditionSource>
+									<Item>ДанныеДляСозданияНоменклатурыOzon</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonСтрокаПоискаКонтекстноеМеню" id="17"/>
+								<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonСтрокаПоискаРасширеннаяПодсказка" id="18"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДанныеДляСозданияНоменклатурыOzonСостояниеПросмотра" id="19">
+								<AdditionSource>
+									<Item>ДанныеДляСозданияНоменклатурыOzon</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonСостояниеПросмотраКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonСостояниеПросмотраРасширеннаяПодсказка" id="21"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДанныеДляСозданияНоменклатурыOzonУправлениеПоиском" id="22">
+								<AdditionSource>
+									<Item>ДанныеДляСозданияНоменклатурыOzon</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonУправлениеПоискомКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonУправлениеПоискомРасширеннаяПодсказка" id="24"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ДанныеДляСозданияНоменклатурыOzonСоздавать" id="45">
+									<DataPath>Объект.ДанныеДляСозданияНоменклатурыOzon.Создавать</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonСоздаватьКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonСоздаватьРасширеннаяПодсказка" id="47"/>
+								</CheckBoxField>
+								<LabelField name="ДанныеДляСозданияНоменклатурыOzonНомерСтроки" id="25">
+									<DataPath>Объект.ДанныеДляСозданияНоменклатурыOzon.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonНомерСтрокиКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonНомерСтрокиРасширеннаяПодсказка" id="27"/>
+								</LabelField>
+								<InputField name="ДанныеДляСозданияНоменклатурыOzonНоменклатураOzon" id="28">
+									<DataPath>Объект.ДанныеДляСозданияНоменклатурыOzon.НоменклатураOzon</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonНоменклатураOzonКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonНоменклатураOzonРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<InputField name="ДанныеДляСозданияНоменклатурыOzonНаименование" id="31">
+									<DataPath>Объект.ДанныеДляСозданияНоменклатурыOzon.Наименование</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonНаименованиеКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonНаименованиеРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="ДанныеДляСозданияНоменклатурыOzonАртикул" id="34">
+									<DataPath>Объект.ДанныеДляСозданияНоменклатурыOzon.Артикул</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonАртикулКонтекстноеМеню" id="35"/>
+									<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonАртикулРасширеннаяПодсказка" id="36"/>
+								</InputField>
+								<InputField name="ДанныеДляСозданияНоменклатурыOzonproduct_id" id="37">
+									<DataPath>Объект.ДанныеДляСозданияНоменклатурыOzon.product_id</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonproduct_idКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonproduct_idРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="ДанныеДляСозданияНоменклатурыOzonШтрихкод" id="40">
+									<DataPath>Объект.ДанныеДляСозданияНоменклатурыOzon.Штрихкод</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonШтрихкодКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonШтрихкодРасширеннаяПодсказка" id="42"/>
+								</InputField>
+								<InputField name="ДанныеДляСозданияНоменклатурыOzonНоменклатура" id="52">
+									<DataPath>Объект.ДанныеДляСозданияНоменклатурыOzon.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеДляСозданияНоменклатурыOzonНоменклатураКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ДанныеДляСозданияНоменклатурыOzonНоменклатураРасширеннаяПодсказка" id="54"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Button name="СоздатьНоменклатуру" id="43">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьНоменклатуру</CommandName>
+							<ExtendedTooltip name="СоздатьНоменклатуруРасширеннаяПодсказка" id="44"/>
+						</Button>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИС_MP_СозданиеНоменклатурыПоТоварам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Профиль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_WB_Профили</v8:Type>
+			</Type>
+			<Save>
+				<Field>Профиль</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ГруппаНоменклатуры" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВидНоменклатуры" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид номенклатуры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтавкаНДС" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ставка НДС</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтавкиНДС</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьНоменклатуру" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать номенклатуру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать номенклатуру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьНоменклатуру</Action>
+		</Command>
+		<Command name="ВыбратьВсе" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать все товары</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ВыбратьВсе</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ИсключитьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исключить все товары</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ИсключитьВсе</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

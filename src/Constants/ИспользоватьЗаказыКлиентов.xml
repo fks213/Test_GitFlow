@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Constant uuid="f0aebffe-0c24-4103-8eae-d2dfb1796ea5">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ИспользоватьЗаказыКлиентов" category="Manager">
+				<xr:TypeId>af8bf9fc-4d1e-484f-b194-3c2b31badc07</xr:TypeId>
+				<xr:ValueId>b099dc48-09dc-4324-9755-896bda672430</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ИспользоватьЗаказыКлиентов" category="ValueManager">
+				<xr:TypeId>13448b4a-eeef-4dc5-a1a8-d473f19c02b3</xr:TypeId>
+				<xr:ValueId>f52dc422-fdfa-46f2-878a-c09bd5cdddc7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ИспользоватьЗаказыКлиентов" category="ValueKey">
+				<xr:TypeId>de218fe6-2fc1-4b2a-acbc-8cc05b7a26e8</xr:TypeId>
+				<xr:ValueId>9125a3ff-a891-45ff-a706-9654dfb54462</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИспользоватьЗаказыКлиентов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>04ea5eff-3aa1-46c8-9710-15a7b457ff3d</ExtendedConfigurationObject>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="bcf823a4-fa63-4e5c-90de-5732199cf81c">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СпособыКомпенсацииВозвратовТоваров" category="Ref">
+				<xr:TypeId>1832a725-53c6-4eb6-8385-7ee17d246c82</xr:TypeId>
+				<xr:ValueId>80151e19-4d04-4247-bcc7-ba56df2f765d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СпособыКомпенсацииВозвратовТоваров" category="Manager">
+				<xr:TypeId>a36ec041-6fbb-464f-9eed-0415aad46db4</xr:TypeId>
+				<xr:ValueId>fc3eac7c-49cd-4bd3-bd36-c2c5f5ddcc6c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СпособыКомпенсацииВозвратовТоваров" category="List">
+				<xr:TypeId>1008c7de-c215-4c93-8357-5a8fc72747c7</xr:TypeId>
+				<xr:ValueId>bdf08439-9e53-4976-ada3-6421bee6e86c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СпособыКомпенсацииВозвратовТоваров</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>6c806002-279d-4494-b25f-28fe494fd1c3</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="19df8b8c-69a4-4337-957c-64c3ea6c62fd">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВернутьДенежныеСредства</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>90e43115-b99a-4223-b381-649b6f1e34fa</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

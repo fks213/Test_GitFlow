@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandsVisibility>
+		<Command name="InformationRegister.ИС_WB_ОграничениеОстатков.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:d86bc9ea-b67d-4a64-917e-1d52ed7e4977">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ИС_МП_Администратор">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:fcb69d3c-8f74-481f-88b3-62acfd33a064">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ИС_МП_Администратор">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:9729e2b8-a22f-48d8-a76b-3fe7ebe72aaf">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ИС_МП_Администратор">false</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+</CommandInterface>

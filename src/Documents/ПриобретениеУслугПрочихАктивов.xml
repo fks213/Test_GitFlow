@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Document uuid="80d68093-ece9-40af-87b7-b2346f2bf87b">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПриобретениеУслугПрочихАктивов" category="Object">
+				<xr:TypeId>77dc6df1-b30a-4c9e-b4cb-c44f7cb059df</xr:TypeId>
+				<xr:ValueId>74231456-6c5d-4df7-bcbd-2b91db0aa2e2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПриобретениеУслугПрочихАктивов" category="Ref">
+				<xr:TypeId>3c6f1cb4-7946-4200-aa77-3dce037f6e79</xr:TypeId>
+				<xr:ValueId>0c54ab80-5300-43c2-99ad-29049c1bc1f4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПриобретениеУслугПрочихАктивов" category="Selection">
+				<xr:TypeId>96cb22d9-6fbc-41e8-9fa8-82fa566170aa</xr:TypeId>
+				<xr:ValueId>625595c4-17d4-4713-bb7f-5ad8681d4ba6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПриобретениеУслугПрочихАктивов" category="List">
+				<xr:TypeId>8dfb9df5-b0e4-4894-bace-2db036701925</xr:TypeId>
+				<xr:ValueId>c2d219cb-cfc6-4438-9fd0-f6fc938b1751</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПриобретениеУслугПрочихАктивов" category="Manager">
+				<xr:TypeId>3659b3d6-0a10-4955-955f-540b87a908bd</xr:TypeId>
+				<xr:ValueId>7af09168-cbbd-4d9f-8490-af9e61426344</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПриобретениеУслугПрочихАктивов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>0026ae83-2895-428e-ac15-82af36e86bb9</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

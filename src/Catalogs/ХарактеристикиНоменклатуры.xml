@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="501f13cc-5c28-4efc-a20b-9f751938c954">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ХарактеристикиНоменклатуры" category="Object">
+				<xr:TypeId>52365e6b-1598-44d5-9573-b2f175f28732</xr:TypeId>
+				<xr:ValueId>bb285b48-53f4-40d3-855a-c49dda0c5d52</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ХарактеристикиНоменклатуры" category="Ref">
+				<xr:TypeId>96de7901-5d1d-4385-ba94-5be067e24068</xr:TypeId>
+				<xr:ValueId>84836100-8875-4475-8450-b5fa63080464</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ХарактеристикиНоменклатуры" category="Selection">
+				<xr:TypeId>ff7d94c6-e058-446f-ad5d-1261fb4b5ad6</xr:TypeId>
+				<xr:ValueId>c51c670e-1d2b-4bba-adf0-672ddac88fa8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ХарактеристикиНоменклатуры" category="List">
+				<xr:TypeId>f97aed80-408d-4ddc-9417-279bf84ca438</xr:TypeId>
+				<xr:ValueId>028c4658-68cb-4766-9aa8-7f5960a79f23</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ХарактеристикиНоменклатуры" category="Manager">
+				<xr:TypeId>969c78cb-2ee8-4a29-9ba7-4f9374f0e8c6</xr:TypeId>
+				<xr:ValueId>61d9c5b8-20e7-4330-a164-9078851aaa40</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ХарактеристикиНоменклатуры</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>5a8b11e6-8638-458b-b52c-cc33fe97d255</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="633e6f8d-82ce-4395-993c-6b2b5fcf0356">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ХарактеристикаНоменклатурыДляЦенообразования</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>5177a4cf-41bd-4286-a166-e5bd4252ee99</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатурыДляЦенообразования</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="1d7c429f-3d6f-4c2f-8dad-b5b1617d4d37">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.ХарактеристикиНоменклатуры.ДополнительныеРеквизиты" category="TabularSection">
+						<xr:TypeId>30b86717-e0bb-4365-91b7-2f38fce9c1c7</xr:TypeId>
+						<xr:ValueId>c366a7e4-59be-4164-82b0-12cd98d35cc1</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.ХарактеристикиНоменклатуры.ДополнительныеРеквизиты" category="TabularSectionRow">
+						<xr:TypeId>81b4e7b5-fcfb-484d-8dc1-0a182877bc3f</xr:TypeId>
+						<xr:ValueId>2f61c774-21b2-45c9-980b-9bd074a6ae74</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДополнительныеРеквизиты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d728a8c0-ecfb-4ad8-9535-a7274e6768dd</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="35d526cb-39e2-4e68-a6d2-d94a96057e9c">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Свойство</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>ca16cb4b-9329-40fa-b563-63e003080cd7</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="4538ee73-289a-4626-8a12-575f0114cd2c">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Значение</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>7617a455-4f2e-4238-9816-23ee72b17059</ExtendedConfigurationObject>
+							<Type>
+								<v8:TypeSet>cfg:Characteristic.ДополнительныеРеквизитыИСведения</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

@@ -1,0 +1,416 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыполнитьДействие" id="39">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыполнитьДействие</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьДействиеРасширеннаяПодсказка" id="40"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Профиль" id="1">
+			<DataPath>Профиль</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПрофильКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПрофильРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="ПричинаОтмены" id="8">
+			<DataPath>ПричинаОтмены</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПричинаОтменыКонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="ПричинаОтменыРасширеннаяПодсказка" id="10"/>
+		</InputField>
+		<InputField name="ДатаОтгрузки" id="55">
+			<DataPath>ДатаОтгрузки</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаОтгрузкиКонтекстноеМеню" id="56"/>
+			<ExtendedTooltip name="ДатаОтгрузкиРасширеннаяПодсказка" id="57"/>
+		</InputField>
+		<Table name="ТаблицаЛотов" id="11">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаЛотов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+			</CommandSet>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаЛотовКонтекстноеМеню" id="12"/>
+			<AutoCommandBar name="ТаблицаЛотовКоманднаяПанель" id="13">
+				<ChildItems>
+					<Button name="ТаблицаЛотовРазбитьНаКороба" id="53">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РазбитьНаКороба</CommandName>
+						<ExtendedTooltip name="ТаблицаЛотовРазбитьНаКоробаРасширеннаяПодсказка" id="54"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаЛотовРасширеннаяПодсказка" id="14"/>
+			<SearchStringAddition name="ТаблицаЛотовСтрокаПоиска" id="15">
+				<AdditionSource>
+					<Item>ТаблицаЛотов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЛотовСтрокаПоискаКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ТаблицаЛотовСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаЛотовСостояниеПросмотра" id="18">
+				<AdditionSource>
+					<Item>ТаблицаЛотов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЛотовСостояниеПросмотраКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ТаблицаЛотовСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаЛотовУправлениеПоиском" id="21">
+				<AdditionSource>
+					<Item>ТаблицаЛотов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаЛотовУправлениеПоискомКонтекстноеМеню" id="22"/>
+				<ExtendedTooltip name="ТаблицаЛотовУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаблицаЛотовОтправление" id="24">
+					<DataPath>ТаблицаЛотов.Отправление</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЛотовОтправлениеКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ТаблицаЛотовОтправлениеРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<InputField name="ТаблицаЛотовНомер" id="27">
+					<DataPath>ТаблицаЛотов.Номер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЛотовНомерКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ТаблицаЛотовНомерРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<InputField name="ТаблицаЛотовНоменклатураМегаМаркета" id="30">
+					<DataPath>ТаблицаЛотов.НоменклатураМегаМаркета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЛотовНоменклатураМегаМаркетаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТаблицаЛотовНоменклатураМегаМаркетаРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ТаблицаЛотовПорядковыйНомер" id="33">
+					<DataPath>ТаблицаЛотов.ПорядковыйНомер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЛотовПорядковыйНомерКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ТаблицаЛотовПорядковыйНомерРасширеннаяПодсказка" id="35"/>
+				</InputField>
+				<InputField name="ТаблицаЛотовАртикул" id="36">
+					<DataPath>ТаблицаЛотов.Артикул</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЛотовАртикулКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ТаблицаЛотовАртикулРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="ТаблицаЛотовНомерЗаказа" id="41">
+					<DataPath>ТаблицаЛотов.НомерЗаказа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЛотовНомерЗаказаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТаблицаЛотовНомерЗаказаРасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">ТаблицаЛотовНомерЗаказаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаЛотовНомерКороба" id="44">
+					<DataPath>ТаблицаЛотов.НомерКороба</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЛотовНомерКоробаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТаблицаЛотовНомерКоробаРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="OnChange">ТаблицаЛотовНомерКоробаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТаблицаЛотовКодКороба" id="47">
+					<DataPath>ТаблицаЛотов.КодКороба</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЛотовКодКоробаКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТаблицаЛотовКодКоробаРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="ТаблицаЛотовКодМаркировки" id="50">
+					<DataPath>ТаблицаЛотов.КодМаркировки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаЛотовКодМаркировкиКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТаблицаЛотовКодМаркировкиРасширеннаяПодсказка" id="52"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаЛотов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица лотов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Отправление" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправление</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ИС_Сбер_Отправление</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номер" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НоменклатураМегаМаркета" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура мега маркета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИС_Сбер_Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПорядковыйНомер" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Порядковый номер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>3</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Артикул" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерЗаказа" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер заказа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерКороба" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер короба</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодКороба" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код короба</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>30</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КодМаркировки" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код маркировки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИдКабинета" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ид кабинета</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="orderCode" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Order code</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Профиль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_WB_Профили</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПричинаОтмены" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Причина отмены</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ИС_Сбер_ПричиныОтменыОтправлений</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Действие" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Действие</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаОтгрузки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата отгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьДействие" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить действие</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить действие</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьДействие</Action>
+		</Command>
+		<Command name="РазбитьНаКороба" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разбить на короба</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разбить на короба</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.РазбитьСтроку</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>РазбитьНаКороба</Action>
+		</Command>
+	</Commands>
+</Form>

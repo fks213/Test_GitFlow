@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Document uuid="b7eada70-080e-4f1c-94d3-bd78b297ce37">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ОтчетКомиссионераОСписании" category="Object">
+				<xr:TypeId>eb3cbe9c-e53f-415a-ad0a-fb06be44dab3</xr:TypeId>
+				<xr:ValueId>4141e917-1f0a-4784-990c-321008f0fa20</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ОтчетКомиссионераОСписании" category="Ref">
+				<xr:TypeId>dec4d4fc-78c6-419f-926a-322ce2f5b4d8</xr:TypeId>
+				<xr:ValueId>b60da809-cf51-443b-9d98-594168b15d6a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ОтчетКомиссионераОСписании" category="Selection">
+				<xr:TypeId>96d0b98d-876c-4bb9-9647-912b13acaadb</xr:TypeId>
+				<xr:ValueId>916d6cbb-cb3b-4b14-937b-80442c603cca</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ОтчетКомиссионераОСписании" category="List">
+				<xr:TypeId>f872a231-5e1b-4d64-b386-6d0a889f7520</xr:TypeId>
+				<xr:ValueId>82d99073-d05c-4a77-8f33-3d0bcbf58cfd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ОтчетКомиссионераОСписании" category="Manager">
+				<xr:TypeId>8fc2e8b0-3a40-471b-8a45-e12007f9499b</xr:TypeId>
+				<xr:ValueId>49354ad3-9f43-42db-93ce-10bb57bd2c37</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ОтчетКомиссионераОСписании</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>7b86cf07-7253-4afb-8d2f-98e82aae1194</ExtendedConfigurationObject>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

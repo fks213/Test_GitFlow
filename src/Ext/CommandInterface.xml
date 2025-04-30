@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<SubsystemsVisibility>
+		<Subsystem name="fcaefdce-9fdd-431e-a8b2-403736b67756">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Subsystem>
+	</SubsystemsVisibility>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.ИС_МП_Маркетплейс</Subsystem>
+		<Subsystem>10b2fbb2-6ad4-47fb-81e8-c54df057270f</Subsystem>
+		<Subsystem>fcaefdce-9fdd-431e-a8b2-403736b67756</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>

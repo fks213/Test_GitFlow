@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandsVisibility>
+		<Command name="Report.ИС_WB_ОтчетПоОстаткам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ИС_МП_Администратор">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_ОтчетЦеныОстатки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_WB_ЗагруженностьСкладовFboСобственнымиТоварами.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_WB_ЛиквидностьТоваровНаСкладах.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_WB_РасчетПотребности.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_MP_ОтчетПоПродажам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_WB_ПродажиПоКатегориям.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_Ozon_РасчетПотребности.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_ЯМ_РасчетПотребности.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_МП_ЮнитЭкономика.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ИС_МП_ОтчетПоЗаказам.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ИС_WB_ОбменДанными.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.ИС_МП_Администратор">true</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="Report.ИС_ОтчетЦеныОстатки.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_MP_ОтчетПоПродажам.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_ОтчетПоОстаткам.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_ЛиквидностьТоваровНаСкладах.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_ЗагруженностьСкладовFboСобственнымиТоварами.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_ОтчетПоОстаткам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_ОтчетЦеныОстатки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_ЗагруженностьСкладовFboСобственнымиТоварами.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_ЛиквидностьТоваровНаСкладах.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_MP_ОстаткиFBO.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_РасчетПотребности.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_ПродажиПоКатегориям.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_РасчетПотребности.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_MP_ОтчетПоПродажам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_ПродажиПоКатегориям.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_Ozon_РасчетПотребности.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_ЯМ_РасчетПотребности.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_Ozon_РасчетПотребности.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_ЯМ_РасчетПотребности.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_МП_АнализABCXYZ.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_WB_ГеографияПоставок.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_MP_ОтчетСопоставленияТоваров.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_МП_ЮнитЭкономика.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_МП_ОтчетПоЗаказам.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="Report.ИС_МП_ОтчетПоЗаказам.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ИС_WB_ОбменДанными.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.ИС_МП_Маркетплейс.Subsystem.Настройки</Subsystem>
+		<Subsystem>Subsystem.ИС_МП_Маркетплейс.Subsystem.РаботаСТоварами</Subsystem>
+		<Subsystem>Subsystem.ИС_МП_Маркетплейс.Subsystem.РаботаСоСборочнымиЗаданиями</Subsystem>
+		<Subsystem>Subsystem.ИС_МП_Маркетплейс.Subsystem.УправлениеОстаткамиИЦенами</Subsystem>
+		<Subsystem>Subsystem.ИС_МП_Маркетплейс.Subsystem.РаботаСОтчетами</Subsystem>
+		<Subsystem>Subsystem.ИС_МП_Маркетплейс.Subsystem.УправлениеМаркетплейсами</Subsystem>
+	</SubsystemsOrder>
+	<GroupsOrder>
+		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

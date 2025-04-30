@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<DataProcessor uuid="2c6446d7-3682-4743-a64f-dd2ebe1365f0">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ИС_Ozon_ВыгрузкаКарточек" category="Object">
+				<xr:TypeId>a87bc6fc-a22e-4f50-a73f-748dc97d6418</xr:TypeId>
+				<xr:ValueId>19c2e62a-1f5e-4626-8de1-63de6cb8025b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ИС_Ozon_ВыгрузкаКарточек" category="Manager">
+				<xr:TypeId>fb8865ca-e117-46f5-89d7-7b00e814ca56</xr:TypeId>
+				<xr:ValueId>757d2ff9-b2d4-4236-99e7-13d11fb8bbe4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ИС_Ozon_ВыгрузкаКарточек</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка карточек Ozon</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.ИС_Ozon_ВыгрузкаКарточек.Form.Форма</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>Форма</Form>
+			<Form>ФормаСопоставленияХарактеристик</Form>
+			<Form>ФормаСопоставленияОсновныхРеквизитов</Form>
+			<Form>ФормаСопоставленияЗначений</Form>
+			<Form>ФормаСопоставленияХарактеристикВесовогоТовара</Form>
+			<Form>ФормаВыбораКатегорийТоваров</Form>
+			<Form>ФормаВыбора</Form>
+			<Form>ФормаКопированияСопоставленияХарактеристик</Form>
+			<Form>ФормаМножественногоВыбораАтрибута</Form>
+			<Form>ФормаДобавленияТоваров</Form>
+			<Form>ФормаИзмененияХарактеристики</Form>
+			<Command uuid="43ac6345-659d-4b49-8c7d-fdbbb740e3ee">
+				<Properties>
+					<Name>ОткрытьФормуПанельНавигации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка карточек Ozon</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelImportant</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

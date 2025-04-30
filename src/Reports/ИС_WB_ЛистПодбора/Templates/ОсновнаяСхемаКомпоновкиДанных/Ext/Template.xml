@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ссылка</dataPath>
+			<field>Ссылка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>convertedPrice</dataPath>
+			<field>convertedPrice</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаЗагрузки</dataPath>
+			<field>ДатаЗагрузки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>article</dataPath>
+			<field>article</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номер</dataPath>
+			<field>Номер</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>orderUid</dataPath>
+			<field>orderUid</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Профиль</dataPath>
+			<field>Профиль</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>price</dataPath>
+			<field>price</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>rid</dataPath>
+			<field>rid</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВалютаПродажи</dataPath>
+			<field>ВалютаПродажи</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Валюта</dataPath>
+			<field>Валюта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураWB</dataPath>
+			<field>НоменклатураWB</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмерWB</dataPath>
+			<field>РазмерWB</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Штрихкод</dataPath>
+			<field>Штрихкод</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Бренд</dataPath>
+			<field>Бренд</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Бренд</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цвет</dataPath>
+			<field>Цвет</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цвет</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>partA</dataPath>
+			<field>partA</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>partB</dataPath>
+			<field>partB</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Part B</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Этикетка</dataPath>
+			<field>Этикетка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипДоставки</dataPath>
+			<field>ТипДоставки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипТовара</dataPath>
+			<field>ТипТовара</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+    ИС_WB_ХарактеристикиКатегорий.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ВТ_Цвет
+ИЗ
+    Справочник.ИС_WB_ХарактеристикиКатегорий КАК ИС_WB_ХарактеристикиКатегорий
+ГДЕ
+    ИС_WB_ХарактеристикиКатегорий.Наименование = "Цвет"
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+    ИС_WB_СборочноеЗадание.Ссылка КАК Ссылка,
+    ИС_WB_СборочноеЗадание.Номер КАК Номер,
+    ИС_WB_СборочноеЗадание.Дата КАК Дата,
+    ИС_WB_СборочноеЗадание.Профиль КАК Профиль,
+    ИС_WB_СборочноеЗадание.article КАК article,
+    ИС_WB_СборочноеЗадание.convertedPrice КАК convertedPrice,
+    ИС_WB_СборочноеЗадание.ТипДоставки КАК ТипДоставки,
+    ИС_WB_СборочноеЗадание.ТипТовара КАК ТипТовара,
+    ИС_WB_СборочноеЗадание.orderUid КАК orderUid,
+    ИС_WB_СборочноеЗадание.price КАК price,
+    ИС_WB_СборочноеЗадание.rid КАК rid,
+    ИС_WB_СборочноеЗадание.ВалютаПродажи КАК ВалютаПродажи,
+    ИС_WB_СборочноеЗадание.Валюта КАК Валюта,
+    ИС_WB_СборочноеЗадание.Заказ КАК Заказ,
+    ИС_WB_СборочноеЗадание.НоменклатураWB КАК НоменклатураWB,
+    ИС_WB_СборочноеЗадание.РазмерWB КАК РазмерWB,
+    ИС_WB_СборочноеЗадание.Склад КАК Склад,
+    ИС_WB_СборочноеЗадание.ДатаЗагрузки КАК ДатаЗагрузки,
+    ИС_WB_СоответствиеРазмеров.Номенклатура КАК Номенклатура,
+    ИС_WB_СоответствиеРазмеров.Характеристика КАК Характеристика,
+    МАКСИМУМ(ЕСТЬNULL(ИС_WB_ШтрихкодыРазмеров.Штрихкод, "")) КАК Штрихкод,
+    МАКСИМУМ(ЕСТЬNULL(ИС_WB_НоменклатураЦвет.Значение, "")) КАК Цвет,
+    ЕСТЬNULL(ИС_WB_СборочноеЗадание.НоменклатураWB.Бренд, "") КАК Бренд
+ПОМЕСТИТЬ ВТ_СборочноеЗадание
+ИЗ
+    Документ.ИС_WB_СборочноеЗадание КАК ИС_WB_СборочноеЗадание
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИС_WB_СоответствиеРазмеров КАК ИС_WB_СоответствиеРазмеров
+        ПО ИС_WB_СборочноеЗадание.Профиль = ИС_WB_СоответствиеРазмеров.Профиль
+            И ИС_WB_СборочноеЗадание.РазмерWB = ИС_WB_СоответствиеРазмеров.РазмерWB
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИС_WB_ШтрихкодыРазмеров КАК ИС_WB_ШтрихкодыРазмеров
+        ПО ИС_WB_СборочноеЗадание.Профиль = ИС_WB_ШтрихкодыРазмеров.Профиль
+            И ИС_WB_СборочноеЗадание.РазмерWB = ИС_WB_ШтрихкодыРазмеров.Размер
+        ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ИС_WB_Номенклатура.Характеристики КАК ИС_WB_НоменклатураЦвет
+        ПО ИС_WB_СборочноеЗадание.НоменклатураWB = ИС_WB_НоменклатураЦвет.Ссылка
+            И (ИС_WB_НоменклатураЦвет.Поле В
+                (ВЫБРАТЬ
+                    ВТ_Цвет.Ссылка КАК Ссылка
+                ИЗ
+                    ВТ_Цвет КАК ВТ_Цвет))
+ГДЕ
+    ИС_WB_СборочноеЗадание.Ссылка В(&amp;Документ)
+
+СГРУППИРОВАТЬ ПО
+    ИС_WB_СборочноеЗадание.Ссылка,
+    ИС_WB_СборочноеЗадание.Номер,
+    ИС_WB_СборочноеЗадание.Дата,
+    ИС_WB_СборочноеЗадание.Профиль,
+    ИС_WB_СборочноеЗадание.article,
+    ИС_WB_СборочноеЗадание.convertedPrice,
+    ИС_WB_СборочноеЗадание.orderUid,
+    ИС_WB_СборочноеЗадание.price,
+    ИС_WB_СборочноеЗадание.rid,
+    ИС_WB_СборочноеЗадание.ВалютаПродажи,
+    ИС_WB_СборочноеЗадание.Валюта,
+    ИС_WB_СборочноеЗадание.Заказ,
+    ИС_WB_СборочноеЗадание.НоменклатураWB,
+    ИС_WB_СборочноеЗадание.РазмерWB,
+    ИС_WB_СборочноеЗадание.Склад,
+    ИС_WB_СборочноеЗадание.ДатаЗагрузки,
+    ИС_WB_СоответствиеРазмеров.Номенклатура,
+    ИС_WB_СоответствиеРазмеров.Характеристика,
+    ЕСТЬNULL(ИС_WB_СборочноеЗадание.НоменклатураWB.Бренд, ""),
+    ИС_WB_СборочноеЗадание.ТипДоставки,
+    ИС_WB_СборочноеЗадание.ТипТовара
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+    ВТ_СборочноеЗадание.Ссылка КАК Ссылка,
+    ВТ_СборочноеЗадание.Номер КАК Номер,
+    ВТ_СборочноеЗадание.Дата КАК Дата,
+    ВТ_СборочноеЗадание.Профиль КАК Профиль,
+    ВТ_СборочноеЗадание.article КАК article,
+    ВТ_СборочноеЗадание.convertedPrice КАК convertedPrice,
+    ВТ_СборочноеЗадание.ТипДоставки КАК ТипДоставки,
+    ВТ_СборочноеЗадание.ТипТовара КАК ТипТовара,
+    ВТ_СборочноеЗадание.orderUid КАК orderUid,
+    ВТ_СборочноеЗадание.price КАК price,
+    ВТ_СборочноеЗадание.rid КАК rid,
+    ВТ_СборочноеЗадание.ВалютаПродажи КАК ВалютаПродажи,
+    ВТ_СборочноеЗадание.Валюта КАК Валюта,
+    ВТ_СборочноеЗадание.Заказ КАК Заказ,
+    ВТ_СборочноеЗадание.НоменклатураWB КАК НоменклатураWB,
+    ВТ_СборочноеЗадание.РазмерWB КАК РазмерWB,
+    ВТ_СборочноеЗадание.Склад КАК Склад,
+    ВТ_СборочноеЗадание.ДатаЗагрузки КАК ДатаЗагрузки,
+    ВТ_СборочноеЗадание.Номенклатура КАК Номенклатура,
+    ВТ_СборочноеЗадание.Характеристика КАК Характеристика,
+    ВТ_СборочноеЗадание.Штрихкод КАК Штрихкод,
+    ВТ_СборочноеЗадание.Бренд КАК Бренд,
+    ВТ_СборочноеЗадание.Цвет КАК Цвет,
+    ИС_WB_СтатусыИЭтикеткиСборочныхЗаданий.partA КАК partA,
+    ИС_WB_СтатусыИЭтикеткиСборочныхЗаданий.partB КАК partB,
+    ИС_WB_СтатусыИЭтикеткиСборочныхЗаданий.Этикетка КАК Этикетка
+ИЗ
+    ВТ_СборочноеЗадание КАК ВТ_СборочноеЗадание
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИС_WB_СтатусыИЭтикеткиСборочныхЗаданий КАК ИС_WB_СтатусыИЭтикеткиСборочныхЗаданий
+        ПО ВТ_СборочноеЗадание.Профиль = ИС_WB_СтатусыИЭтикеткиСборочныхЗаданий.Профиль
+            И ВТ_СборочноеЗадание.Ссылка = ИС_WB_СтатусыИЭтикеткиСборочныхЗаданий.СборочноеЗадание</query>
+	</dataSet>
+	<parameter>
+		<name>Документ</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Документ</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:DocumentRef.ИС_WB_СборочноеЗадание</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ЛистПодбораУниверсальный</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Лист подбора универсальный</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Номер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Бренд</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НоменклатураWB.Наименование</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Название</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РазмерWB.techSize</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Размер</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Цвет</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>article</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Артикул продавца</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Стикер</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>partA</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>partB</dcsset:field>
+						</dcsset:item>
+						<dcsset:placement>Together</dcsset:placement>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>Этикетка</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВыводитьКартинку</dcscor:parameter>
+								<dcscor:value xsi:type="dcsset:DataCompositionPictureOutputType">OutputByValue</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>РазмерКартинки</dcscor:parameter>
+								<dcscor:value xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet" xsi:type="mxl:PictureSize">Proportionally</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ВертикальноеПоложениеКартинки</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:VerticalAlign">Center</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ГоризонтальноеПоложениеКартинки</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">БезОформления</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

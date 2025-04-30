@@ -1,0 +1,1562 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>ДанныеПоЗаказам</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураOzon</dataPath>
+			<field>НоменклатураOzon</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сумма</dataPath>
+			<field>Сумма</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Количество</dataPath>
+			<field>Количество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Коэффициент</dataPath>
+			<field>Коэффициент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коэффициент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Упаковка</dataPath>
+			<field>Упаковка</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Компенсации</dataPath>
+			<field>Компенсации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компенсации</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипНачислений</dataPath>
+			<field>ТипНачислений</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип начислений</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СервисныеСборы</dataPath>
+			<field>СервисныеСборы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервисные сборы</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УслугиПоПродажам</dataPath>
+			<field>УслугиПоПродажам</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Услуги по продажам</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комиссия</dataPath>
+			<field>Комиссия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комиссия</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтоимостьДоставки</dataPath>
+			<field>СтоимостьДоставки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость доставки</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УслугиПоВозвратамИОтменам</dataPath>
+			<field>УслугиПоВозвратамИОтменам</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Услуги по возвратам и отменам</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Прочее</dataPath>
+			<field>Прочее</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочее</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НомерОтправления</dataPath>
+			<field>НомерОтправления</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер отправления</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипОперации</dataPath>
+			<field>ТипОперации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип операции</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоВозврат</dataPath>
+			<field>КоличествоВозврат</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество возврат</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НазваниеТипаОперации</dataPath>
+			<field>НазваниеТипаОперации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Название типа операции</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Заказ</dataPath>
+			<field>Заказ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Выручка</dataPath>
+			<field>Выручка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выручка</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<item xsi:type="DataSetQuery">
+			<name>ПродажиВозвраты</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НоменклатураOzon</dataPath>
+				<field>НоменклатураOzon</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сумма</dataPath>
+				<field>Сумма</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество</dataPath>
+				<field>Количество</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Характеристика</dataPath>
+				<field>Характеристика</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Коэффициент</dataPath>
+				<field>Коэффициент</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Коэффициент</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Упаковка</dataPath>
+				<field>Упаковка</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НомерОтправления</dataPath>
+				<field>НомерОтправления</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Номер отправления</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоВозврат</dataPath>
+				<field>КоличествоВозврат</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество возврат</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Склад</dataPath>
+				<field>Склад</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Заказ</dataPath>
+				<field>Заказ</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заказ</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Выручка</dataPath>
+				<field>Выручка</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выручка</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СервисныеСборы</dataPath>
+				<field>СервисныеСборы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сервисные сборы</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Комиссия</dataPath>
+				<field>Комиссия</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Комиссия</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>УслугиПоПродажам</dataPath>
+				<field>УслугиПоПродажам</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Услуги по продажам</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>УслугиПоВозвратамИОтменам</dataPath>
+				<field>УслугиПоВозвратамИОтменам</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Услуги по возвратам и отменам</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Компенсации</dataPath>
+				<field>Компенсации</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Компенсации</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтоимостьДоставки</dataPath>
+				<field>СтоимостьДоставки</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Стоимость доставки</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Прочее</dataPath>
+				<field>Прочее</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Прочее</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НазваниеТипаОперации</dataPath>
+				<field>НазваниеТипаОперации</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Название типа операции</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ИС_Ozon_Заказproducts.НоменклатураOzon КАК НоменклатураOzon,
+	ИС_Ozon_Заказproducts.Ссылка.Номер КАК НомерОтправления,
+	ИС_Ozon_Заказproducts.quantity КАК Количество,
+	ИС_Ozon_Заказproducts.Сумма КАК Сумма,
+	ВЫБОР
+		КОГДА ИС_Ozon_СтатусыСборочныхЗаданий.status = ЗНАЧЕНИЕ(Перечисление.ИС_Ozon_СтатусыОтправлений.cancelled)
+				ИЛИ ИС_Ozon_СтатусыСборочныхЗаданий.status = ЗНАЧЕНИЕ(Перечисление.ИС_Ozon_СтатусыОтправлений.cancelled_from_split_pending)
+			ТОГДА -1
+		ИНАЧЕ 1
+	КОНЕЦ КАК Коэффициент,
+	ИС_Ozon_СоответствиеХарактеристик.Номенклатура КАК Номенклатура,
+	ИС_Ozon_СоответствиеХарактеристик.Характеристика КАК Характеристика,
+	ИС_Ozon_СоответствиеХарактеристик.Упаковка КАК Упаковка,
+	ИС_Ozon_Заказproducts.Ссылка.Склад КАК Склад,
+	ИС_Ozon_Заказproducts.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ВТ_Данные
+ИЗ
+	Документ.ИС_Ozon_Заказ.products КАК ИС_Ozon_Заказproducts
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИС_Ozon_СтатусыСборочныхЗаданий КАК ИС_Ozon_СтатусыСборочныхЗаданий
+		ПО ИС_Ozon_Заказproducts.Ссылка = ИС_Ozon_СтатусыСборочныхЗаданий.Заказ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИС_Ozon_СоответствиеХарактеристик КАК ИС_Ozon_СоответствиеХарактеристик
+		ПО ИС_Ozon_Заказproducts.НоменклатураOzon = ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon
+ГДЕ
+	ИС_Ozon_Заказproducts.Ссылка.Профиль = &amp;Профиль
+	И ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.Профиль = &amp;Профиль
+	И (ИС_Ozon_Заказproducts.Ссылка.Склад В (&amp;Склад)
+			ИЛИ &amp;ВсеСклады)
+	И ИС_Ozon_Заказproducts.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И (ИС_Ozon_СоответствиеХарактеристик.Номенклатура В (&amp;Номенклатура)
+			ИЛИ &amp;ВсяНоменклатура)
+	И НЕ ИС_Ozon_СоответствиеХарактеристик.Номенклатура ЕСТЬ NULL
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Данные.НоменклатураOzon КАК НоменклатураOzon,
+	ВТ_Данные.НомерОтправления КАК НомерОтправления,
+	ВТ_Данные.Количество КАК Количество,
+	ВТ_Данные.Сумма КАК Сумма,
+	ВТ_Данные.Коэффициент КАК Коэффициент,
+	ВТ_Данные.Номенклатура КАК Номенклатура,
+	ВТ_Данные.Характеристика КАК Характеристика,
+	ВТ_Данные.Упаковка КАК Упаковка,
+	ВЫБОР
+		КОГДА ВТ_Данные.Коэффициент = -1
+			ТОГДА ВТ_Данные.Количество
+		ИНАЧЕ 0
+	КОНЕЦ КАК КоличествоВозврат,
+	ВТ_Данные.Склад КАК Склад,
+	ВТ_Данные.Ссылка КАК Заказ,
+	ВЫБОР
+		КОГДА ВТ_Данные.Коэффициент = -1
+			ТОГДА 0
+		ИНАЧЕ ВТ_Данные.Сумма
+	КОНЕЦ КАК Выручка,
+	0 КАК Комиссия,
+	0 КАК УслугиПоПродажам,
+	0 КАК УслугиПоВозвратамИОтменам,
+	0 КАК СервисныеСборы,
+	0 КАК Компенсации,
+	0 КАК СтоимостьДоставки,
+	0 КАК Прочее,
+	"Заказ" КАК НазваниеТипаОперации
+ИЗ
+	ВТ_Данные КАК ВТ_Данные</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>Услуги</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НоменклатураOzon</dataPath>
+				<field>НоменклатураOzon</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Компенсации</dataPath>
+				<field>Компенсации</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Компенсации</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипНачислений</dataPath>
+				<field>ТипНачислений</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Тип начислений</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СервисныеСборы</dataPath>
+				<field>СервисныеСборы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сервисные сборы</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>УслугиПоПродажам</dataPath>
+				<field>УслугиПоПродажам</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Услуги по продажам</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Комиссия</dataPath>
+				<field>Комиссия</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Комиссия</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтоимостьДоставки</dataPath>
+				<field>СтоимостьДоставки</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Стоимость доставки</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>УслугиПоВозвратамИОтменам</dataPath>
+				<field>УслугиПоВозвратамИОтменам</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Услуги по возвратам и отменам</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Прочее</dataPath>
+				<field>Прочее</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Прочее</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТипОперации</dataPath>
+				<field>ТипОперации</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Тип операции</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Характеристика</dataPath>
+				<field>Характеристика</field>
+				<role>
+					<dcscom:dimension>true</dcscom:dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НомерОтправления</dataPath>
+				<field>НомерОтправления</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Номер отправления</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НазваниеТипаОперации</dataPath>
+				<field>НазваниеТипаОперации</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Название типа операции</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Заказ</dataPath>
+				<field>Заказ</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Заказ</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Склад</dataPath>
+				<field>Склад</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Склад</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ИС_Ozon_Заказproducts.НоменклатураOzon КАК НоменклатураOzon,
+	ИС_Ozon_Заказproducts.Ссылка.Номер КАК НомерОтправления,
+	ИС_Ozon_ДанныеУслуг.operation_type КАК ТипОперации,
+	ИС_Ozon_ДанныеУслуг.type КАК ТипНачислений,
+	ИС_Ozon_ДанныеУслуг.sale_commission КАК Комиссия,
+	ИС_Ozon_СоответствиеХарактеристик.Номенклатура КАК Номенклатура,
+	ИС_Ozon_СоответствиеХарактеристик.Характеристика КАК Характеристика,
+	ВЫБОР
+		КОГДА ИС_Ozon_ДанныеУслуг.type = ЗНАЧЕНИЕ(Перечисление.ИС_Ozon_ТипыОперацийВТранзакциях.orders)
+				И ИС_Ozon_ДанныеУслуг.sale_commission = 0
+			ТОГДА ИС_Ozon_ДанныеУслуг.amount
+		ИНАЧЕ ВЫБОР
+				КОГДА ИС_Ozon_ДанныеУслуг.type = ЗНАЧЕНИЕ(Перечисление.ИС_Ozon_ТипыОперацийВТранзакциях.orders)
+						И НЕ ИС_Ozon_ДанныеУслуг.sale_commission = 0
+					ТОГДА (ИС_Ozon_ДанныеУслуг.accruals_for_sale + ИС_Ozon_ДанныеУслуг.sale_commission - ИС_Ozon_ДанныеУслуг.amount) * -1
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК УслугиПоПродажам,
+	ВЫБОР
+		КОГДА ИС_Ozon_ДанныеУслуг.type = ЗНАЧЕНИЕ(Перечисление.ИС_Ozon_ТипыОперацийВТранзакциях.returns)
+				И ЕСТЬNULL(ИС_Ozon_ДанныеУслуг.sale_commission, 0) = 0
+			ТОГДА (ИС_Ozon_ДанныеУслуг.accruals_for_sale + ИС_Ozon_ДанныеУслуг.sale_commission - ИС_Ozon_ДанныеУслуг.amount) * -1
+		ИНАЧЕ 0
+	КОНЕЦ КАК УслугиПоВозвратамИОтменам,
+	ВЫБОР
+		КОГДА ИС_Ozon_ДанныеУслуг.type = ЗНАЧЕНИЕ(Перечисление.ИС_Ozon_ТипыОперацийВТранзакциях.services)
+			ТОГДА ИС_Ozon_ДанныеУслуг.amount
+		ИНАЧЕ 0
+	КОНЕЦ КАК СервисныеСборы,
+	ВЫБОР
+		КОГДА ИС_Ozon_ДанныеУслуг.type = ЗНАЧЕНИЕ(Перечисление.ИС_Ozon_ТипыОперацийВТранзакциях.compensation)
+			ТОГДА ИС_Ozon_ДанныеУслуг.amount
+		ИНАЧЕ 0
+	КОНЕЦ КАК Компенсации,
+	ВЫБОР
+		КОГДА ИС_Ozon_ДанныеУслуг.type = ЗНАЧЕНИЕ(Перечисление.ИС_Ozon_ТипыОперацийВТранзакциях.transfer_delivery)
+			ТОГДА ИС_Ozon_ДанныеУслуг.amount
+		ИНАЧЕ 0
+	КОНЕЦ КАК СтоимостьДоставки,
+	ВЫБОР
+		КОГДА ИС_Ozon_ДанныеУслуг.type = ЗНАЧЕНИЕ(Перечисление.ИС_Ozon_ТипыОперацийВТранзакциях.other)
+			ТОГДА ИС_Ozon_ДанныеУслуг.amount
+		ИНАЧЕ 0
+	КОНЕЦ КАК Прочее,
+	ИС_Ozon_ДанныеУслуг.operation_type_name КАК operation_type_name,
+	ИС_Ozon_Заказproducts.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ВТ_Услуги
+ИЗ
+	Документ.ИС_Ozon_Заказ.products КАК ИС_Ozon_Заказproducts
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрСведений.ИС_Ozon_ДанныеУслуг КАК ИС_Ozon_ДанныеУслуг
+		ПО ИС_Ozon_Заказproducts.Ссылка.Номер = ИС_Ozon_ДанныеУслуг.posting_number
+		ПОЛНОЕ СОЕДИНЕНИЕ РегистрСведений.ИС_Ozon_СоответствиеХарактеристик КАК ИС_Ozon_СоответствиеХарактеристик
+		ПО ИС_Ozon_Заказproducts.НоменклатураOzon = ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon
+ГДЕ
+	ИС_Ozon_Заказproducts.Ссылка.Профиль = &amp;Профиль
+	И ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.Профиль = &amp;Профиль
+	И (ИС_Ozon_Заказproducts.Ссылка.Склад В (&amp;Склад)
+			ИЛИ &amp;ВсеСклады)
+	И ИС_Ozon_Заказproducts.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И НЕ ИС_Ozon_ДанныеУслуг.type ЕСТЬ NULL
+	И (ИС_Ozon_СоответствиеХарактеристик.Номенклатура В (&amp;Номенклатура)
+			ИЛИ &amp;ВсяНоменклатура)
+	И НЕ ИС_Ozon_СоответствиеХарактеристик.Номенклатура ЕСТЬ NULL
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Услуги.НоменклатураOzon КАК НоменклатураOzon,
+	ВТ_Услуги.НомерОтправления КАК НомерОтправления,
+	ВТ_Услуги.ТипОперации КАК ТипОперации,
+	ВТ_Услуги.ТипНачислений КАК ТипНачислений,
+	СУММА(ВТ_Услуги.Комиссия) КАК Комиссия,
+	ВТ_Услуги.Номенклатура КАК Номенклатура,
+	ВТ_Услуги.Характеристика КАК Характеристика,
+	СУММА(ВТ_Услуги.УслугиПоПродажам) КАК УслугиПоПродажам,
+	СУММА(ВТ_Услуги.УслугиПоВозвратамИОтменам) КАК УслугиПоВозвратамИОтменам,
+	СУММА(ВТ_Услуги.СервисныеСборы) КАК СервисныеСборы,
+	СУММА(ВТ_Услуги.Компенсации) КАК Компенсации,
+	СУММА(ВТ_Услуги.СтоимостьДоставки) КАК СтоимостьДоставки,
+	СУММА(ВТ_Услуги.Прочее) КАК Прочее,
+	ВТ_Услуги.operation_type_name КАК НазваниеТипаОперации,
+	ВТ_Услуги.Ссылка КАК Заказ,
+	ВТ_Услуги.Ссылка.Склад КАК Склад
+ИЗ
+	ВТ_Услуги КАК ВТ_Услуги
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Услуги.НоменклатураOzon,
+	ВТ_Услуги.НомерОтправления,
+	ВТ_Услуги.ТипОперации,
+	ВТ_Услуги.ТипНачислений,
+	ВТ_Услуги.Номенклатура,
+	ВТ_Услуги.Характеристика,
+	ВТ_Услуги.operation_type_name,
+	ВТ_Услуги.Ссылка</query>
+		</item>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Цены</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураOzon</dataPath>
+			<field>НоменклатураOzon</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цена</dataPath>
+			<field>Цена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦены</dataPath>
+			<field>ВидЦены</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon КАК НоменклатураOzon,
+	ИС_Ozon_СоответствиеХарактеристик.Номенклатура КАК Номенклатура,
+	ИС_Ozon_СоответствиеХарактеристик.Характеристика КАК Характеристика,
+	ЕСТЬNULL(ИС_Ozon_СоответствиеХарактеристик.Характеристика.ХарактеристикаНоменклатурыДляЦенообразования, ЗНАЧЕНИЕ(Справочник.ХарактеристикиНоменклатурыДляЦенообразования.ПустаяСсылка)) КАК ХарактеристикаЦО,
+	ИС_Ozon_СоответствиеХарактеристик.Упаковка КАК Упаковка,
+	ЕСТЬNULL(ИС_Ozon_СоответствиеХарактеристик.Номенклатура.ТипНоменклатуры, ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.ПустаяСсылка)) = ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Набор) КАК ЭтоНабор,
+	ВЫБОР
+		КОГДА ИС_Ozon_СоответствиеХарактеристик.Упаковка.Числитель = 0
+			ТОГДА 1
+		ИНАЧЕ ЕСТЬNULL(ИС_Ozon_СоответствиеХарактеристик.Упаковка.Числитель, 1)
+	КОНЕЦ / ВЫБОР
+		КОГДА ИС_Ozon_СоответствиеХарактеристик.Упаковка.Знаменатель = 0
+			ТОГДА 1
+		ИНАЧЕ ЕСТЬNULL(ИС_Ozon_СоответствиеХарактеристик.Упаковка.Знаменатель, 1)
+	КОНЕЦ КАК КоэффициентУпаковки
+ПОМЕСТИТЬ ВТ_Сопоставление
+ИЗ
+	РегистрСведений.ИС_Ozon_СоответствиеХарактеристик КАК ИС_Ozon_СоответствиеХарактеристик
+ГДЕ
+	ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.Профиль = &amp;Профиль
+	И (ИС_Ozon_СоответствиеХарактеристик.Номенклатура В (&amp;Номенклатура)
+			ИЛИ &amp;ВсяНоменклатура)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ИСТИНА КАК РассчитываетсяИзЦенКомплектующих,
+	ВариантыКомплектацииНоменклатуры.Владелец КАК Номенклатура,
+	ВариантыКомплектацииНоменклатуры.Характеристика КАК Характеристика,
+	ВариантыКомплектацииНоменклатурыТовары.Номенклатура КАК НоменклатураНабора,
+	ВариантыКомплектацииНоменклатурыТовары.Характеристика КАК ХарактеристикаНабора,
+	ВЫБОР
+		КОГДА ВариантыКомплектацииНоменклатурыТовары.Упаковка.Числитель = 0
+			ТОГДА 1
+		ИНАЧЕ ЕСТЬNULL(ВариантыКомплектацииНоменклатурыТовары.Упаковка.Числитель, 1)
+	КОНЕЦ / ВЫБОР
+		КОГДА ВариантыКомплектацииНоменклатурыТовары.Упаковка.Знаменатель = 0
+			ТОГДА 1
+		ИНАЧЕ ЕСТЬNULL(ВариантыКомплектацииНоменклатурыТовары.Упаковка.Знаменатель, 1)
+	КОНЕЦ КАК КоэффициентУпаковки,
+	ВариантыКомплектацииНоменклатурыТовары.КоличествоУпаковок КАК КоличествоНабора
+ПОМЕСТИТЬ ВТ_СоставНаборов
+ИЗ
+	Справочник.ВариантыКомплектацииНоменклатуры.Товары КАК ВариантыКомплектацииНоменклатурыТовары
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ВариантыКомплектацииНоменклатуры КАК ВариантыКомплектацииНоменклатуры
+		ПО ВариантыКомплектацииНоменклатурыТовары.Ссылка = ВариантыКомплектацииНоменклатуры.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ВидыНоменклатуры КАК ВидыНоменклатуры
+		ПО ВариантыКомплектацииНоменклатурыТовары.Номенклатура.ВидНоменклатуры = ВидыНоменклатуры.Ссылка
+ГДЕ
+	ВариантыКомплектацииНоменклатуры.ВариантРасчетаЦеныНабора = ЗНАЧЕНИЕ(Перечисление.ВариантыРасчетаЦенНаборов.РассчитываетсяИзЦенКомплектующих)
+	И (ВариантыКомплектацииНоменклатуры.Владелец, ВариантыКомплектацииНоменклатуры.Характеристика) В
+			(ВЫБРАТЬ
+				ВТ.Номенклатура КАК Номенклатура,
+				ВТ.Характеристика КАК Характеристика
+			ИЗ
+				ВТ_Сопоставление КАК ВТ
+			ГДЕ
+				ВТ.ЭтоНабор)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЦеныНоменклатуры.Номенклатура КАК Номенклатура,
+	ЦеныНоменклатуры.Характеристика КАК Характеристика,
+	ЕСТЬNULL(ЦеныНоменклатуры.Цена, 0) КАК Цена,
+	ВЫБОР
+		КОГДА ЦеныНоменклатуры.Упаковка.Числитель = 0
+			ТОГДА 1
+		ИНАЧЕ ЕСТЬNULL(ЦеныНоменклатуры.Упаковка.Числитель, 1)
+	КОНЕЦ / ВЫБОР
+		КОГДА ЦеныНоменклатуры.Упаковка.Знаменатель = 0
+			ТОГДА 1
+		ИНАЧЕ ЕСТЬNULL(ЦеныНоменклатуры.Упаковка.Знаменатель, 1)
+	КОНЕЦ КАК КоэффициентУпаковкиЦена
+ПОМЕСТИТЬ ВТ_ЦеныТоваров
+ИЗ
+	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(
+			,
+			ВидЦены = &amp;ВидЦены
+				И (Номенклатура, Характеристика) В
+					(ВЫБРАТЬ
+						ВТ.Номенклатура КАК Номенклатура,
+						ВТ.Характеристика КАК Характеристика
+					ИЗ
+						ВТ_Сопоставление КАК ВТ
+			
+					ОБЪЕДИНИТЬ ВСЕ
+			
+					ВЫБРАТЬ
+						ВТ_СоставНаборов.НоменклатураНабора,
+						ВТ_СоставНаборов.ХарактеристикаНабора
+					ИЗ
+						ВТ_СоставНаборов КАК ВТ_СоставНаборов)) КАК ЦеныНоменклатуры
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЦеныТоваров.Номенклатура КАК Номенклатура,
+	ВТ_ЦеныТоваров.Характеристика КАК Характеристика,
+	СУММА(ВТ_ЦеныТоваров.Цена) КАК Цена,
+	СУММА(ВТ_ЦеныТоваров.КоэффициентУпаковкиЦена) КАК КоэффициентУпаковкиЦена
+ПОМЕСТИТЬ ВТ_ЦеныТоваровОбъединениеЦен
+ИЗ
+	ВТ_ЦеныТоваров КАК ВТ_ЦеныТоваров
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ЦеныТоваров.Номенклатура,
+	ВТ_ЦеныТоваров.Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЦеныТоваровОбъединениеЦен.Номенклатура КАК Номенклатура,
+	ВТ_ЦеныТоваровОбъединениеЦен.Характеристика КАК Характеристика,
+	ВТ_ЦеныТоваровОбъединениеЦен.Цена КАК Цена,
+	ВЫБОР
+		КОГДА ВТ_ЦеныТоваровОбъединениеЦен.КоэффициентУпаковкиЦена = 0
+			ТОГДА 1
+		ИНАЧЕ ВТ_ЦеныТоваровОбъединениеЦен.КоэффициентУпаковкиЦена
+	КОНЕЦ КАК КоэффициентУпаковкиЦена
+ПОМЕСТИТЬ ВТ_ЦеныТоваровОбъединение
+ИЗ
+	ВТ_ЦеныТоваровОбъединениеЦен КАК ВТ_ЦеныТоваровОбъединениеЦен
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_СоставНаборов.РассчитываетсяИзЦенКомплектующих КАК РассчитываетсяИзЦенКомплектующих,
+	ВТ_СоставНаборов.Номенклатура КАК Номенклатура,
+	ВТ_СоставНаборов.Характеристика КАК Характеристика,
+	ВТ_СоставНаборов.НоменклатураНабора КАК НоменклатураНабора,
+	ВТ_СоставНаборов.ХарактеристикаНабора КАК ХарактеристикаНабора,
+	СУММА(ВЫБОР
+			КОГДА ЕСТЬNULL(ВТ_ЦеныТоваровОбъединение.Цена, 0) * ВТ_СоставНаборов.КоличествоНабора * ВТ_СоставНаборов.КоэффициентУпаковки / ЕСТЬNULL(ВТ_ЦеныТоваровОбъединение.КоэффициентУпаковкиЦена, 1) - 0.5 &lt; 0
+				ТОГДА 0
+			ИНАЧЕ ВЫРАЗИТЬ(ЕСТЬNULL(ВТ_ЦеныТоваровОбъединение.Цена, 0) * ВТ_СоставНаборов.КоличествоНабора * ВТ_СоставНаборов.КоэффициентУпаковки / ЕСТЬNULL(ВТ_ЦеныТоваровОбъединение.КоэффициентУпаковкиЦена, 1) - 0.5 КАК ЧИСЛО(10, 0))
+		КОНЕЦ) КАК Цена
+ПОМЕСТИТЬ ВТ_ЦеныНаборовИтог
+ИЗ
+	ВТ_СоставНаборов КАК ВТ_СоставНаборов
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЦеныТоваровОбъединение КАК ВТ_ЦеныТоваровОбъединение
+		ПО ВТ_СоставНаборов.НоменклатураНабора = ВТ_ЦеныТоваровОбъединение.Номенклатура
+			И ВТ_СоставНаборов.ХарактеристикаНабора = ВТ_ЦеныТоваровОбъединение.Характеристика
+
+СГРУППИРОВАТЬ ПО
+	ВТ_СоставНаборов.Номенклатура,
+	ВТ_СоставНаборов.Характеристика,
+	ВТ_СоставНаборов.РассчитываетсяИзЦенКомплектующих,
+	ВТ_СоставНаборов.НоменклатураНабора,
+	ВТ_СоставНаборов.ХарактеристикаНабора
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЦеныНаборовИтог.РассчитываетсяИзЦенКомплектующих КАК РассчитываетсяИзЦенКомплектующих,
+	ВТ_ЦеныНаборовИтог.Номенклатура КАК Номенклатура,
+	ВТ_ЦеныНаборовИтог.Характеристика КАК Характеристика,
+	СУММА(ЕСТЬNULL(ВТ_ЦеныНаборовИтог.Цена, 0)) КАК Цена
+ПОМЕСТИТЬ ВТ_ЦеныНаборов
+ИЗ
+	ВТ_ЦеныНаборовИтог КАК ВТ_ЦеныНаборовИтог
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ЦеныНаборовИтог.РассчитываетсяИзЦенКомплектующих,
+	ВТ_ЦеныНаборовИтог.Номенклатура,
+	ВТ_ЦеныНаборовИтог.Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Сопоставление.НоменклатураOzon КАК НоменклатураOzon,
+	ВТ_Сопоставление.Номенклатура КАК Номенклатура,
+	ВТ_Сопоставление.Характеристика КАК Характеристика,
+	ВЫБОР
+		КОГДА ВТ_Сопоставление.ЭтоНабор
+				И ВТ_ЦеныНаборов.РассчитываетсяИзЦенКомплектующих
+			ТОГДА ВТ_ЦеныНаборов.Цена
+		ИНАЧЕ ВЫБОР
+				КОГДА ЕСТЬNULL(ВТ_ЦеныТоваровОбъединение.Цена, 0) * ВТ_Сопоставление.КоэффициентУпаковки / ЕСТЬNULL(ВТ_ЦеныТоваровОбъединение.КоэффициентУпаковкиЦена, 1) - 0.5 &lt; 0
+					ТОГДА 0
+				ИНАЧЕ ВЫРАЗИТЬ(ЕСТЬNULL(ВТ_ЦеныТоваровОбъединение.Цена, 0) * ВТ_Сопоставление.КоэффициентУпаковки / ЕСТЬNULL(ВТ_ЦеныТоваровОбъединение.КоэффициентУпаковкиЦена, 1) - 0.5 КАК ЧИСЛО(10, 0))
+			КОНЕЦ
+	КОНЕЦ КАК Цена
+ПОМЕСТИТЬ ВТ_ЦеныОбъединение
+ИЗ
+	ВТ_Сопоставление КАК ВТ_Сопоставление
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЦеныТоваровОбъединение КАК ВТ_ЦеныТоваровОбъединение
+		ПО ВТ_Сопоставление.Номенклатура = ВТ_ЦеныТоваровОбъединение.Номенклатура
+			И ВТ_Сопоставление.Характеристика = ВТ_ЦеныТоваровОбъединение.Характеристика
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЦеныНаборов КАК ВТ_ЦеныНаборов
+		ПО ВТ_Сопоставление.Номенклатура = ВТ_ЦеныНаборов.Номенклатура
+			И ВТ_Сопоставление.Характеристика = ВТ_ЦеныНаборов.Характеристика
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Сопоставление.НоменклатураOzon КАК НоменклатураOzon,
+	ВТ_Сопоставление.Номенклатура КАК Номенклатура,
+	ВТ_Сопоставление.Характеристика КАК Характеристика,
+	ВЫРАЗИТЬ(ВТ_ЦеныОбъединение.Цена КАК ЧИСЛО(10, 0)) КАК Цена
+ИЗ
+	ВТ_Сопоставление КАК ВТ_Сопоставление
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЦеныОбъединение КАК ВТ_ЦеныОбъединение
+		ПО ВТ_Сопоставление.НоменклатураOzon = ВТ_ЦеныОбъединение.НоменклатураOzon</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>ДанныеПоЗаказам</sourceDataSet>
+		<destinationDataSet>Цены</destinationDataSet>
+		<sourceExpression>НоменклатураOzon</sourceExpression>
+		<destinationExpression>НоменклатураOzon</destinationExpression>
+	</dataSetLink>
+	<calculatedField>
+		<dataPath>Маржа</dataPath>
+		<expression>100</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Маржинальность, %</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧН=-</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Себестоимость</dataPath>
+		<expression>0</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Себестоимость</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧН=-</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<totalField>
+		<dataPath>Количество</dataPath>
+		<expression>Сумма(Количество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоВозврат</dataPath>
+		<expression>Сумма(КоличествоВозврат)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Сумма</dataPath>
+		<expression>Сумма(Сумма) * Коэффициент</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СервисныеСборы</dataPath>
+		<expression>Сумма(СервисныеСборы)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СтоимостьДоставки</dataPath>
+		<expression>Сумма(СтоимостьДоставки)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Компенсации</dataPath>
+		<expression>Сумма(Компенсации)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Комиссия</dataPath>
+		<expression>Сумма(Комиссия)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УслугиПоВозвратамИОтменам</dataPath>
+		<expression>Сумма(УслугиПоВозвратамИОтменам)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>УслугиПоПродажам</dataPath>
+		<expression>Сумма(УслугиПоПродажам)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Прочее</dataPath>
+		<expression>Сумма(Прочее)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>Цена</dataPath>
+		<expression>Максимум(Цена)</expression>
+		<group>Номенклатура</group>
+	</totalField>
+	<totalField>
+		<dataPath>Цена</dataPath>
+		<expression>0</expression>
+		<group>Заказ</group>
+		<group>НазваниеТипаОперации</group>
+	</totalField>
+	<totalField>
+		<dataPath>Себестоимость</dataPath>
+		<expression>Максимум(Цена) * Сумма(Количество) + (Максимум(Цена) * Сумма(КоличествоВозврат) * -1)</expression>
+		<group>Номенклатура</group>
+	</totalField>
+	<totalField>
+		<dataPath>Себестоимость</dataPath>
+		<expression>0</expression>
+		<group>Заказ</group>
+		<group>НазваниеТипаОперации</group>
+	</totalField>
+	<totalField>
+		<dataPath>Себестоимость</dataPath>
+		<expression>Сумма(Себестоимость)</expression>
+		<group>Склад</group>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа</dataPath>
+		<expression> ВЫБОР КОГДА Сумма(Выручка) &gt; 0 ТОГДА (100 * (Сумма(Выручка) + Сумма(СервисныеСборы) + Сумма(СтоимостьДоставки) + Сумма(Компенсации) + Сумма(Комиссия) + Сумма(УслугиПоВозвратамИОтменам) + Сумма(УслугиПоПродажам) + Сумма(Прочее) - (Максимум(Цена) * Сумма(Количество) + (Максимум(Цена) * Сумма(КоличествоВозврат) * -1))) )/ (Сумма(Выручка)) ИНАЧЕ 100 КОНЕЦ
+</expression>
+		<group>Номенклатура</group>
+		<group>Склад</group>
+	</totalField>
+	<totalField>
+		<dataPath>Маржа</dataPath>
+		<expression>0</expression>
+		<group>Выручка</group>
+		<group>Заказ</group>
+		<group>Количество</group>
+		<group>КоличествоВозврат</group>
+		<group>Комиссия</group>
+		<group>Компенсации</group>
+		<group>Коэффициент</group>
+		<group>Маржа</group>
+		<group>НазваниеТипаОперации</group>
+		<group>НомерОтправления</group>
+		<group>Прочее</group>
+		<group>Себестоимость</group>
+		<group>СервисныеСборы</group>
+		<group>СтоимостьДоставки</group>
+		<group>Сумма</group>
+		<group>ТипНачислений</group>
+		<group>ТипОперации</group>
+		<group>Упаковка</group>
+		<group>УслугиПоВозвратамИОтменам</group>
+		<group>УслугиПоПродажам</group>
+		<group>ОбщийИтог</group>
+	</totalField>
+	<totalField>
+		<dataPath>Выручка</dataPath>
+		<expression>Сумма(Выручка)</expression>
+		<group>Заказ</group>
+		<group>Номенклатура</group>
+		<group>Склад</group>
+	</totalField>
+	<totalField>
+		<dataPath>Выручка</dataPath>
+		<expression>0</expression>
+		<group>НазваниеТипаОперации</group>
+	</totalField>
+	<parameter>
+		<name>ВсеСклады</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Все склады</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<expression>ВЫБОР КОГДА ЗНАЧЕНИЕЗАПОЛНЕНО(&amp;Склад) ТОГДА ЛОЖЬ ИНАЧЕ ИСТИНА КОНЕЦ</expression>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>Профиль</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Профиль</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ИС_WB_Профили</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>Склад</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Склад</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ИС_Ozon_Склады</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+					<dcscor:item>
+						<dcscor:choiceParameter>Отбор.Профиль</dcscor:choiceParameter>
+						<dcscor:value>ПараметрыДанных.Профиль</dcscor:value>
+						<dcscor:mode xmlns:d7p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d7p1:LinkedValueChangeMode">Clear</dcscor:mode>
+					</dcscor:item>
+				</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Номенклатура</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Номенклатура</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Номенклатура</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>ВсяНоменклатура</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вся номенклатура</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<expression>ВЫБОР КОГДА ЗНАЧЕНИЕЗАПОЛНЕНО(&amp;Номенклатура) ТОГДА ЛОЖЬ ИНАЧЕ ИСТИНА КОНЕЦ</expression>
+	</parameter>
+	<parameter>
+		<name>ВидЦены</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид цены</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыЦен</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОтчетПоЗаказам</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет по заказам</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НазваниеТипаОперации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Количество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоВозврат</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Выручка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Себестоимость</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Комиссия</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УслугиПоПродажам</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УслугиПоВозвратамИОтменам</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Компенсации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СервисныеСборы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтоимостьДоставки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Прочее</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Склад</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Заказ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Маржа</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Профиль</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>86766f4f-2ed3-4b40-9d4f-f88dba208708</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Склад</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>e46ac6e2-5e8b-4b91-977d-5475d4274e15</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>353f7339-38ec-4991-9739-16cce52bc7a1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Номенклатура</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>53748686-b920-4815-9492-7f0de777e096</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВидЦены</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>b9126931-4912-4144-9d83-ce644bfa2a5f</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>6e86c2e3-22b8-4938-a405-3f08fc141198</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Море</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Склад</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Номенклатура</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Характеристика</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Заказ</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

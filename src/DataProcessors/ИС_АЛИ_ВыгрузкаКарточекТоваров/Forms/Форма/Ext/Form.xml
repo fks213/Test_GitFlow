@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Выгрузка карточек Aliexpress</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<Customizable>false</Customizable>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Аккаунт" id="182">
+			<DataPath>Профиль</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АккаунтКонтекстноеМеню" id="183"/>
+			<ExtendedTooltip name="АккаунтРасширеннаяПодсказка" id="184"/>
+		</InputField>
+		<UsualGroup name="СозданиеИРедактированиеТоваровНаOzonИз1С" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки для выгрузки карточек на Ozon из 1С</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<VerticalSpacing>OneAndHalf</VerticalSpacing>
+			<Behavior>Collapsible</Behavior>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>StrongSeparation</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СозданиеИРедактированиеТоваровНаOzonИз1СРасширеннаяПодсказка" id="100"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРасположениеНаСтранице" id="185">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расположение на странице</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа расположение на странице</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРасположениеНаСтраницеРасширеннаяПодсказка" id="186"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗагрузкаДанных" id="187">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузка структур данных</v8:content>
+								</v8:item>
+							</Title>
+							<TitleFont ref="style:NormalTextFont" height="12" kind="StyleItem" scale="100"/>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа загрузка данных</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаЗагрузкаДанныхРасширеннаяПодсказка" id="188"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЗагрузкаКатегорийТоваров" id="15">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Загрузка категорий товаров</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<Behavior>Usual</Behavior>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗагрузкаКатегорийТоваровРасширеннаяПодсказка" id="16"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаЗагрузитьКатегориТоваровСАли" id="61">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Загрузить категори товаров с Али</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа загрузить категори товаров с али</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>43</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЗагрузитьКатегориТоваровСАлиРасширеннаяПодсказка" id="62"/>
+											<ChildItems>
+												<Button name="ЗагрузитьКатегориТоваровСАли" id="17">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ЗагрузитьКатегориТоваровСАли</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>1) Загрузить категории</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>None</ToolTipRepresentation>
+													<ExtendedTooltip name="ЗагрузитьКатегориТоваровСАлиРасширеннаяПодсказка" id="18">
+														<Width>43</Width>
+														<Title formatted="true">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Выполняется первоначальная загрузка, обновление категорий товаров с Ozon, для возможности дальнейшего сопоставления товаров.</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаВыборИспользуемыхКатегорийТоваров" id="25">
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаВыборИспользуемыхКатегорийТоваровРасширеннаяПодсказка" id="26"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаВыборИспользуемыхКатегорий" id="72">
+											<Width>43</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаВыборИспользуемыхКатегорийРасширеннаяПодсказка" id="73"/>
+											<ChildItems>
+												<Button name="ВыборИспользуемыхКатегорий" id="27">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ВыборИспользуемыхКатегорий</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>2) Выбор категорий для выгрузки и настройки</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>None</ToolTipRepresentation>
+													<ExtendedTooltip name="ВыборИспользуемыхКатегорийРасширеннаяПодсказка" id="28">
+														<Width>43</Width>
+														<Title formatted="true">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Выбираются категории товаров, по которым ведется торговля на OZON</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаЗагрузкаЗначенийХарактеристик" id="45">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа загрузка значений характеристик</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа загрузка значений характеристик</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЗагрузкаЗначенийХарактеристикРасширеннаяПодсказка" id="46"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаЗагрузитьЗначенияХарактеристикСАли" id="109">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа загрузить значения характеристик с али</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа загрузить значения характеристик с али</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>43</Width>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаЗагрузитьЗначенияХарактеристикСАлиРасширеннаяПодсказка" id="110"/>
+											<ChildItems>
+												<Button name="ЗагрузитьЗначенияХарактеристикСАли" id="47">
+													<Type>Hyperlink</Type>
+													<CommandName>Form.Command.ЗагрузитьЗначенияХарактеристикСАли</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>3) Загрузить значения атрибутов</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTipRepresentation>None</ToolTipRepresentation>
+													<ExtendedTooltip name="ЗагрузитьЗначенияХарактеристикСАлиРасширеннаяПодсказка" id="48">
+														<Width>43</Width>
+														<Title formatted="true">
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Выполняется загрузка доступных значений характеристик с OZON</v8:content>
+															</v8:item>
+														</Title>
+													</ExtendedTooltip>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СопоставлениеДанных" id="59">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сопоставление данных</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<VerticalSpacing>OneAndHalf</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="СопоставлениеДанныхРасширеннаяПодсказка" id="60"/>
+							<ChildItems>
+								<Button name="СопоставитьОсновныеРеквизитыТоваров" id="57">
+									<Type>Hyperlink</Type>
+									<Width>43</Width>
+									<CommandName>Form.Command.СопоставитьОсновныеРеквизитыТоваров</CommandName>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="СопоставитьОсновныеРеквизитыТоваровРасширеннаяПодсказка" id="58">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выполнить сопоставление обязательных реквизитов товаров OZON со значениями в базе 1С</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+								<Button name="СопоставитьЗначенияХарактеристик" id="55">
+									<Type>Hyperlink</Type>
+									<Width>43</Width>
+									<CommandName>Form.Command.СопоставитьЗначенияХарактеристик</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сопоставить значения атрибутов товара</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ExtendedTooltip name="СопоставитьЗначенияХарактеристикРасширеннаяПодсказка" id="56">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выполнить сопоставление значений характеристик OZON со значениями в базе 1С</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ВыгрузкаКарточек" id="189">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгрузка товаров на Aliexpress</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгрузка карточек</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<VerticalSpacing>OneAndHalf</VerticalSpacing>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ВыгрузкаКарточекРасширеннаяПодсказка" id="190"/>
+							<ChildItems>
+								<Button name="ВыгрузитьТовары" id="191">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ВыгрузитьТовары</CommandName>
+									<ExtendedTooltip name="ВыгрузитьТоварыРасширеннаяПодсказка" id="192"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа_РегламентыеЗадания" id="162">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регламентые задания</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа регламентые задания</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа_РегламентыеЗаданияРасширеннаяПодсказка" id="163"/>
+					<ChildItems>
+						<UsualGroup name="Группа_ОбновлениеСправочников" id="143">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обновление справочников</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа обновление справочников</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа_ОбновлениеСправочниковРасширеннаяПодсказка" id="144"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаИспользовать_ОбновлениеСправочников" id="145">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать обновление справочников</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа использовать обновление справочников</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаИспользовать_ОбновлениеСправочниковРасширеннаяПодсказка" id="146"/>
+									<ChildItems>
+										<CheckBoxField name="ОбновлениеСправочников" id="157">
+											<DataPath>ОбновлениеСправочников</DataPath>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОбновлениеСправочниковКонтекстноеМеню" id="158"/>
+											<ExtendedTooltip name="ОбновлениеСправочниковРасширеннаяПодсказка" id="159">
+												<Title formatted="false">
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Актуализация списка категорий, характеристик и значений характеристик, а так же складов и методов доставки</v8:content>
+													</v8:item>
+												</Title>
+											</ExtendedTooltip>
+											<Events>
+												<Event name="OnChange">ОбновлениеСправочниковПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаНастройки_ОбновлениеСправочников" id="147">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройки обновление справочников</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройки обновление справочников</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>43</Width>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНастройки_ОбновлениеСправочниковРасширеннаяПодсказка" id="148"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСтатус_ОбновлениеСправочников" id="149">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа статус обновление справочников</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа статус обновление справочников</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСтатус_ОбновлениеСправочниковРасширеннаяПодсказка" id="150"/>
+											<ChildItems>
+												<LabelDecoration name="Завершено_ОбновлениеСправочников" id="154">
+													<ContextMenu name="Завершено_ОбновлениеСправочниковКонтекстноеМеню" id="155"/>
+													<ExtendedTooltip name="Завершено_ОбновлениеСправочниковРасширеннаяПодсказка" id="156"/>
+												</LabelDecoration>
+												<LabelDecoration name="Состояние_ОбновлениеСправочников" id="151">
+													<ContextMenu name="Состояние_ОбновлениеСправочниковКонтекстноеМеню" id="152"/>
+													<ExtendedTooltip name="Состояние_ОбновлениеСправочниковРасширеннаяПодсказка" id="153"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаСпособВыгрузкиФотографийТоваров" id="118">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сервис для выгрузки фотографий товаров</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа способ выгрузки фотографий товаров</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ГруппаСпособВыгрузкиФотографийТоваровРасширеннаяПодсказка" id="119"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация_СпособВыгрузкиКартинок" id="123">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;b&gt;&lt;font Times New Roman&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;ВАЖНО!&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Times New Roman&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Times New Roman&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;Применимо только для свойства товара "&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;i&gt;&lt;font Times New Roman&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;Ссылка на главное фото&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Times New Roman&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;", если при сопоставлении был  выбран реквизит &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Times New Roman&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;1С &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Times New Roman&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;с типом = "&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;u&gt;&lt;font Times New Roman&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;Ссылка на присоединенный файл&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Times New Roman&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;"&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<BackColor>style:AuxiliaryNavigationColor</BackColor>
+							<ContextMenu name="Декорация_СпособВыгрузкиКартинокКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="Декорация_СпособВыгрузкиКартинокРасширеннаяПодсказка" id="125"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаВыборСпособаВыгрузкиФотографийТоваров" id="129">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выбор способа выгрузки фотографий товаров</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выбор способа выгрузки фотографий товаров</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВыборСпособаВыгрузкиФотографийТоваровРасширеннаяПодсказка" id="130"/>
+							<ChildItems>
+								<InputField name="ВариантВыгрузкиГлавногоФото" id="126">
+									<DataPath>ВариантВыгрузкиФотографий</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<Width>42</Width>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Picabox</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Яндекс.Диск</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ВариантВыгрузкиГлавногоФотоКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="ВариантВыгрузкиГлавногоФотоРасширеннаяПодсказка" id="128">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Выберите сервис для получения ссылок на фотографии при добавлении товаров.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">ВариантВыгрузкиГлавногоФотоПриИзменении</Event>
+									</Events>
+								</InputField>
+								<UsualGroup name="ГруппаНастройкиЯндексДиск" id="131">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройки яндекс диск</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа настройки яндекс диск</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>42</Width>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаНастройкиЯндексДискРасширеннаяПодсказка" id="132"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСостояниеАвторизацииЯндексДиск" id="141">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа состояние авторизации яндекс диск</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа состояние авторизации яндекс диск</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСостояниеАвторизацииЯндексДискРасширеннаяПодсказка" id="142"/>
+											<ChildItems>
+												<PictureDecoration name="Декорация1" id="138">
+													<ContextMenu name="Декорация1КонтекстноеМеню" id="139"/>
+													<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="140"/>
+												</PictureDecoration>
+												<LabelDecoration name="Декорация_НастройкиЯндексДиска" id="135">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Авторизация выполнена</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация_НастройкиЯндексДискаКонтекстноеМеню" id="136"/>
+													<ExtendedTooltip name="Декорация_НастройкиЯндексДискаРасширеннаяПодсказка" id="137"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИС_АЛИ_ВыгрузкаКарточекТоваров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ДатаАктуальностиЗначенийХарактеристик" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата актуальности значений характеристик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаАктуальностиКатегорийТоваров" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата актуальности категорий товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаАктуальностиХарактеристик" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата актуальности характеристик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатВыбораИспользуемыхКатегорий" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат выбора используемых категорий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатЗагрузкиЗначенийХарактеристик" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат загрузки значений характеристик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатЗагрузкиКатегорийТоваров" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат загрузки категорий товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатЗагрузкиХарактеристик" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат загрузки характеристик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыбранныеКатегорииТоваров" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранные категории товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Профиль" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_WB_Профили</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="ЗагружатьЗначенияНеобязательныхХарактеристик" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загружать значения необязательных характеристик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьЯндексДискДляОбменаКартинками" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать яндекс диск для обмена картинками</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВариантВыгрузкиФотографий" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант выгрузки фотографий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЯндексДискТокенПриложения" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Яндекс диск токен приложения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбновлениеСправочников" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автоматическое обновление справочной информации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьДополнительныеОтчетыИОбработки" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать дополнительные отчеты и обработки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбработкаРегламентныхЗаданийУстановлена" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обработка регламентных заданий установлена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьПраваАдминистратора" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть права администратора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьКатегориТоваровСАли" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить категории товаров с Али</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить категори товаров с али</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьКатегориТоваровСOzon</Action>
+		</Command>
+		<Command name="ВыборИспользуемыхКатегорий" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор используемых категорий</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыборИспользуемыхКатегорий</Action>
+		</Command>
+		<Command name="ЗагрузитьЗначенияХарактеристикСАли" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить значения характеристик с Али</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить значения характеристик с али</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьЗначенияХарактеристикСOzon</Action>
+		</Command>
+		<Command name="СопоставитьЗначенияХарактеристик" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставить значения характеристик</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СопоставитьЗначенияХарактеристик</Action>
+		</Command>
+		<Command name="СопоставитьОсновныеРеквизитыТоваров" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставить основные реквизиты товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Action>СопоставитьОсновныеРеквизитыТоваров</Action>
+		</Command>
+		<Command name="ВыгрузитьТовары" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить товары</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить товары</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьТовары</Action>
+		</Command>
+	</Commands>
+</Form>

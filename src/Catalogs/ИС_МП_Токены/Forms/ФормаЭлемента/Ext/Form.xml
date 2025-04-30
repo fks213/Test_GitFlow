@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбщаяКомандаИС_MP_РежимТехническогоСпециалиста" id="81">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.ИС_МП_РежимТехническогоСпециалиста</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаОбщаяКомандаИС_MP_РежимТехническогоСпециалистаРасширеннаяПодсказка" id="82"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаКодДата" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код дата</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа код дата</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКодДатаРасширеннаяПодсказка" id="80"/>
+			<ChildItems>
+				<InputField name="Код" id="1">
+					<DataPath>Объект.Code</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<LabelField name="Добавлен" id="13">
+					<DataPath>Объект.Добавлен</DataPath>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<EditMode>EnterOnInput</EditMode>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="ДобавленКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ДобавленРасширеннаяПодсказка" id="15"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<LabelField name="Владелец" id="4">
+			<DataPath>Объект.Owner</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ContextMenu name="ВладелецКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="6"/>
+		</LabelField>
+		<LabelField name="Маркетплейс" id="7">
+			<DataPath>Объект.Маркетплейс</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<ContextMenu name="МаркетплейсКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="МаркетплейсРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="OnChange">МаркетплейсПриИзменении</Event>
+			</Events>
+		</LabelField>
+		<InputField name="Токен" id="10">
+			<DataPath>Объект.Токен</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MultiLine>true</MultiLine>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТокенКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ТокенРасширеннаяПодсказка" id="12"/>
+			<Events>
+				<Event name="TextEditEnd">ТокенОкончаниеВводаТекста</Event>
+			</Events>
+		</InputField>
+		<Table name="СвойстваТокенаВБ" id="16">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СвойстваТокенаВБ</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СвойстваТокенаВБКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="СвойстваТокенаВБКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="СвойстваТокенаВБРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="СвойстваТокенаВБСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>СвойстваТокенаВБ</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СвойстваТокенаВБСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СвойстваТокенаВБСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СвойстваТокенаВБСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>СвойстваТокенаВБ</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СвойстваТокенаВБСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="СвойстваТокенаВБСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СвойстваТокенаВБУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>СвойстваТокенаВБ</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СвойстваТокенаВБУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="СвойстваТокенаВБУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="СвойстваТокенаВБКонтент" id="32">
+					<DataPath>Объект.СвойстваТокенаВБ.Контент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБКонтентКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СвойстваТокенаВБКонтентРасширеннаяПодсказка" id="34"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБАналитика" id="35">
+					<DataPath>Объект.СвойстваТокенаВБ.Аналитика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБАналитикаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СвойстваТокенаВБАналитикаРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБЦены" id="38">
+					<DataPath>Объект.СвойстваТокенаВБ.Цены</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБЦеныКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СвойстваТокенаВБЦеныРасширеннаяПодсказка" id="40"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБМаркетплейс" id="41">
+					<DataPath>Объект.СвойстваТокенаВБ.Маркетплейс</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБМаркетплейсКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СвойстваТокенаВБМаркетплейсРасширеннаяПодсказка" id="43"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБСтатистика" id="44">
+					<DataPath>Объект.СвойстваТокенаВБ.Статистика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБСтатистикаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СвойстваТокенаВБСтатистикаРасширеннаяПодсказка" id="46"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБПродвижение" id="47">
+					<DataPath>Объект.СвойстваТокенаВБ.Продвижение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБПродвижениеКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СвойстваТокенаВБПродвижениеРасширеннаяПодсказка" id="49"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБВопросы" id="50">
+					<DataPath>Объект.СвойстваТокенаВБ.Вопросы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБВопросыКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="СвойстваТокенаВБВопросыРасширеннаяПодсказка" id="52"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБЧат" id="53">
+					<DataPath>Объект.СвойстваТокенаВБ.Чат</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБЧатКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СвойстваТокенаВБЧатРасширеннаяПодсказка" id="55"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБПоставки" id="56">
+					<DataPath>Объект.СвойстваТокенаВБ.Поставки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБПоставкиКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СвойстваТокенаВБПоставкиРасширеннаяПодсказка" id="58"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБВозвраты" id="59">
+					<DataPath>Объект.СвойстваТокенаВБ.Возвраты</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБВозвратыКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СвойстваТокенаВБВозвратыРасширеннаяПодсказка" id="61"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБДокументы" id="62">
+					<DataPath>Объект.СвойстваТокенаВБ.Документы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБДокументыКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СвойстваТокенаВБДокументыРасширеннаяПодсказка" id="64"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБТарифы" id="65">
+					<DataPath>Объект.СвойстваТокенаВБ.Тарифы</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБТарифыКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="СвойстваТокенаВБТарифыРасширеннаяПодсказка" id="67"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБТолькоЧтение" id="68">
+					<DataPath>Объект.СвойстваТокенаВБ.ТолькоЧтение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБТолькоЧтениеКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="СвойстваТокенаВБТолькоЧтениеРасширеннаяПодсказка" id="70"/>
+				</CheckBoxField>
+				<CheckBoxField name="СвойстваТокенаВБТестовыйКонтур" id="71">
+					<DataPath>Объект.СвойстваТокенаВБ.ТестовыйКонтур</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СвойстваТокенаВБТестовыйКонтурКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="СвойстваТокенаВБТестовыйКонтурРасширеннаяПодсказка" id="73"/>
+				</CheckBoxField>
+				<InputField name="СвойстваТокенаВБДатаОкончания" id="74">
+					<DataPath>Объект.СвойстваТокенаВБ.ДатаОкончания</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СвойстваТокенаВБДатаОкончанияКонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="СвойстваТокенаВБДатаОкончанияРасширеннаяПодсказка" id="76"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ИС_МП_Токены</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

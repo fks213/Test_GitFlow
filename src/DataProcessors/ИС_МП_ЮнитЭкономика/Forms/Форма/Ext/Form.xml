@@ -1,0 +1,662 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="197">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="198"/>
+			<ChildItems>
+				<InputField name="Профиль" id="1">
+					<DataPath>Профиль</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПрофильКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПрофильРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Период" id="4">
+					<DataPath>Период</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период необходимо задавать понедельно(периоды за которые Wildberries предоставляет отчет)</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаСтраницы" id="199">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страницы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="200"/>
+			<ChildItems>
+				<Page name="СтраницаWildBerries" id="201">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>WildBerries</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница wild berries</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Picture>
+						<xr:Ref>CommonPicture.ИС_WB_Лого</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СтраницаWildBerriesРасширеннаяПодсказка" id="202"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаСтраницаWildBerriesШапка" id="203">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа страница wild berries шапка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа страница wild berries шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСтраницаWildBerriesШапкаРасширеннаяПодсказка" id="204"/>
+							<ChildItems>
+								<Button name="WildBerriesЗагрузитьДанныеОК" id="59">
+									<Type>UsualButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.ЗагрузитьДанныеОК</CommandName>
+									<ExtendedTooltip name="WildBerriesЗагрузитьДанныеОКРасширеннаяПодсказка" id="60"/>
+								</Button>
+								<Button name="WildBerriesЗагрузитьДанныеХранения" id="190">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗагрузитьДанныеХранения</CommandName>
+									<ExtendedTooltip name="WildBerriesЗагрузитьДанныеХраненияРасширеннаяПодсказка" id="191"/>
+								</Button>
+								<PictureDecoration name="WildBerriesКартинкаОжидание" id="192">
+									<Visible>false</Visible>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка ожидание</v8:content>
+										</v8:item>
+									</Title>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Picture>
+										<xr:Ref>CommonPicture.ДлительнаяОперация16</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="WildBerriesКартинкаОжиданиеКонтекстноеМеню" id="193"/>
+									<ExtendedTooltip name="WildBerriesКартинкаОжиданиеРасширеннаяПодсказка" id="194"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="WildBerriesТаблицаДанных" id="205">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>WildBerriesТаблицаДанных</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="WildBerriesТаблицаДанныхКонтекстноеМеню" id="206"/>
+							<AutoCommandBar name="WildBerriesТаблицаДанныхКоманднаяПанель" id="207"/>
+							<ExtendedTooltip name="WildBerriesТаблицаДанныхРасширеннаяПодсказка" id="208"/>
+							<SearchStringAddition name="WildBerriesТаблицаДанныхСтрокаПоиска" id="209">
+								<AdditionSource>
+									<Item>WildBerriesТаблицаДанных</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="WildBerriesТаблицаДанныхСтрокаПоискаКонтекстноеМеню" id="210"/>
+								<ExtendedTooltip name="WildBerriesТаблицаДанныхСтрокаПоискаРасширеннаяПодсказка" id="211"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="WildBerriesТаблицаДанныхСостояниеПросмотра" id="212">
+								<AdditionSource>
+									<Item>WildBerriesТаблицаДанных</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="WildBerriesТаблицаДанныхСостояниеПросмотраКонтекстноеМеню" id="213"/>
+								<ExtendedTooltip name="WildBerriesТаблицаДанныхСостояниеПросмотраРасширеннаяПодсказка" id="214"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="WildBerriesТаблицаДанныхУправлениеПоиском" id="215">
+								<AdditionSource>
+									<Item>WildBerriesТаблицаДанных</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="WildBerriesТаблицаДанныхУправлениеПоискомКонтекстноеМеню" id="216"/>
+								<ExtendedTooltip name="WildBerriesТаблицаДанныхУправлениеПоискомРасширеннаяПодсказка" id="217"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="WildBerriesТаблицаДанныхЗаказМП" id="266">
+									<DataPath>WildBerriesТаблицаДанных.ЗаказМП</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхЗаказМПКонтекстноеМеню" id="267"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхЗаказМПРасширеннаяПодсказка" id="268"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхЗаказМПНомер" id="269">
+									<DataPath>WildBerriesТаблицаДанных.ЗаказМП.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхЗаказМПНомерКонтекстноеМеню" id="270"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхЗаказМПНомерРасширеннаяПодсказка" id="271"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхЗаказМПДата" id="272">
+									<DataPath>WildBerriesТаблицаДанных.ЗаказМП.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхЗаказМПДатаКонтекстноеМеню" id="273"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхЗаказМПДатаРасширеннаяПодсказка" id="274"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхРазмерWB" id="218">
+									<DataPath>WildBerriesТаблицаДанных.РазмерWB</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхРазмерWBКонтекстноеМеню" id="219"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхРазмерWBРасширеннаяПодсказка" id="220"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхНоменклатураWB" id="221">
+									<DataPath>WildBerriesТаблицаДанных.НоменклатураWB</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхНоменклатураWBКонтекстноеМеню" id="222"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхНоменклатураWBРасширеннаяПодсказка" id="223"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхНоменклатура" id="224">
+									<DataPath>WildBerriesТаблицаДанных.Номенклатура</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхНоменклатураКонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхНоменклатураРасширеннаяПодсказка" id="226"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхХарактеристика" id="227">
+									<DataPath>WildBerriesТаблицаДанных.Характеристика</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхХарактеристикаКонтекстноеМеню" id="228"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхХарактеристикаРасширеннаяПодсказка" id="229"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхКоличество" id="230">
+									<DataPath>WildBerriesТаблицаДанных.Количество</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхКоличествоКонтекстноеМеню" id="231"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхКоличествоРасширеннаяПодсказка" id="232"/>
+									<Events>
+										<Event name="OnChange">WildBerriesТаблицаДанныхКоличествоПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхЦенаПередачи" id="233">
+									<DataPath>WildBerriesТаблицаДанных.ЦенаПередачи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхЦенаПередачиКонтекстноеМеню" id="234"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхЦенаПередачиРасширеннаяПодсказка" id="235"/>
+									<Events>
+										<Event name="OnChange">WildBerriesТаблицаДанныхЦенаПередачиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхКомиссия" id="236">
+									<DataPath>WildBerriesТаблицаДанных.Комиссия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхКомиссияКонтекстноеМеню" id="237"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхКомиссияРасширеннаяПодсказка" id="238"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхЛогистика" id="239">
+									<DataPath>WildBerriesТаблицаДанных.Логистика</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхЛогистикаКонтекстноеМеню" id="240"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхЛогистикаРасширеннаяПодсказка" id="241"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхХранение" id="242">
+									<DataPath>WildBerriesТаблицаДанных.Хранение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхХранениеКонтекстноеМеню" id="243"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхХранениеРасширеннаяПодсказка" id="244"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхШтрафы" id="245">
+									<DataPath>WildBerriesТаблицаДанных.Штрафы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхШтрафыКонтекстноеМеню" id="246"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхШтрафыРасширеннаяПодсказка" id="247"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхПрочиеРасходы" id="248">
+									<DataPath>WildBerriesТаблицаДанных.ПрочиеРасходы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхПрочиеРасходыКонтекстноеМеню" id="249"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхПрочиеРасходыРасширеннаяПодсказка" id="250"/>
+									<Events>
+										<Event name="OnChange">WildBerriesТаблицаДанныхПрочиеРасходыПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхЗакупочнаяЦена" id="263">
+									<DataPath>WildBerriesТаблицаДанных.ЗакупочнаяЦена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхЗакупочнаяЦенаКонтекстноеМеню" id="264"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхЗакупочнаяЦенаРасширеннаяПодсказка" id="265"/>
+									<Events>
+										<Event name="OnChange">WildBerriesТаблицаДанныхЗакупочнаяЦенаПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхСебестоимость" id="251">
+									<DataPath>WildBerriesТаблицаДанных.Себестоимость</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхСебестоимостьКонтекстноеМеню" id="252"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхСебестоимостьРасширеннаяПодсказка" id="253"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхМаржинальнаяПрибыль" id="254">
+									<DataPath>WildBerriesТаблицаДанных.МаржинальнаяПрибыль</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхМаржинальнаяПрибыльКонтекстноеМеню" id="255"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхМаржинальнаяПрибыльРасширеннаяПодсказка" id="256"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхМаржинальностьПроцент" id="257">
+									<DataPath>WildBerriesТаблицаДанных.МаржинальностьПроцент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхМаржинальностьПроцентКонтекстноеМеню" id="258"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхМаржинальностьПроцентРасширеннаяПодсказка" id="259"/>
+								</InputField>
+								<InputField name="WildBerriesТаблицаДанныхВыручка" id="260">
+									<DataPath>WildBerriesТаблицаДанных.Выручка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="WildBerriesТаблицаДанныхВыручкаКонтекстноеМеню" id="261"/>
+									<ExtendedTooltip name="WildBerriesТаблицаДанныхВыручкаРасширеннаяПодсказка" id="262"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИС_МП_ЮнитЭкономика</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Профиль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_WB_Профили</v8:Type>
+			</Type>
+			<Save>
+				<Field>Профиль</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Период" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="WildBerriesТаблицаДанных" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Wild berries таблица данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="РазмерWB" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер WB</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИС_WB_РазмерыНоменклатур</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НоменклатураWB" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура WB</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИС_WB_Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатурыДляЦенообразования</v8:Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЦенаПередачи" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Цена передачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комиссия" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комиссия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Логистика" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Логистика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Хранение" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Хранение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Штрафы" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Штрафы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПрочиеРасходы" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочие расходы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Себестоимость" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Себестоимость</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="МаржинальнаяПрибыль" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Маржинальная прибыль</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="МаржинальностьПроцент" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Маржинальность, %</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выручка" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выручка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗаказМП" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заказ МП</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ИС_WB_СборочноеЗадание</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗакупочнаяЦена" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закупочная цена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>2</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Маркетплейс" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Маркетплейс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>Маркетплейс</Field>
+			</Save>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьДанныеОК" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные ОК</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьДанныеОК</Action>
+		</Command>
+		<Command name="ЗагрузитьДанныеХранения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные хранения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить данные хранения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьДанныеХранения</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,802 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ОсновнойЗапрос</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АртикулПоставщика</dataPath>
+			<field>АртикулПоставщика</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Артикул поставщика</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЛинейноеВзвешенноеСкользящееКоличество</dataPath>
+			<field>ЛинейноеВзвешенноеСкользящееКоличество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Линейное взвешенное скользящее количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СуммаПродаж</dataPath>
+			<field>СуммаПродаж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сумма продаж</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбщееКоличествоПродаж</dataPath>
+			<field>ОбщееКоличествоПродаж</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общее количество продаж</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СреднееПредполагаемое</dataPath>
+			<field>СреднееПредполагаемое</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Среднее предполагаемое</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПростоеСкользящееКоличество</dataPath>
+			<field>ПростоеСкользящееКоличество</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Простое скользящее количество</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ВЫРАЗИТЬ(РАЗНОСТЬДАТ(&amp;НачалоПериода, &amp;КонецПериода, ДЕНЬ) / &amp;КоличествоДней КАК ЧИСЛО(15, 0)) КАК КоличествоПериодов
+ПОМЕСТИТЬ ВТ_КоличествоПериодов
+ГДЕ
+	РАЗНОСТЬДАТ(&amp;НачалоПериода, &amp;КонецПериода, ДЕНЬ) &gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	aa.a * 1000 + bb.b * 100 + cc.c * 10 + dd.d КАК Значение
+ПОМЕСТИТЬ ВТ_Итераторы
+ИЗ
+	(ВЫБРАТЬ
+		0 КАК a
+	
+	ОБЪЕДИНИТЬ
+	
+	ВЫБРАТЬ
+		1
+	
+	ОБЪЕДИНИТЬ
+	
+	ВЫБРАТЬ
+		2
+	
+	ОБЪЕДИНИТЬ
+	
+	ВЫБРАТЬ
+		3
+	
+	ОБЪЕДИНИТЬ
+	
+	ВЫБРАТЬ
+		4
+	
+	ОБЪЕДИНИТЬ
+	
+	ВЫБРАТЬ
+		5
+	
+	ОБЪЕДИНИТЬ
+	
+	ВЫБРАТЬ
+		6
+	
+	ОБЪЕДИНИТЬ
+	
+	ВЫБРАТЬ
+		7
+	
+	ОБЪЕДИНИТЬ
+	
+	ВЫБРАТЬ
+		8
+	
+	ОБЪЕДИНИТЬ
+	
+	ВЫБРАТЬ
+		9) КАК aa
+		ПОЛНОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			0 КАК b
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			1
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			2
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			3
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			4
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			5
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			6
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			7
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			8
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			9) КАК bb
+		ПО (ИСТИНА)
+		ПОЛНОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			0 КАК c
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			1
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			2
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			3
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			4
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			5
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			6
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			7
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			8
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			9) КАК cc
+		ПО (ИСТИНА)
+		ПОЛНОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			0 КАК d
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			1
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			2
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			3
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			4
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			5
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			6
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			7
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			8
+		
+		ОБЪЕДИНИТЬ
+		
+		ВЫБРАТЬ
+			9) КАК dd
+		ПО (ИСТИНА),
+	ВТ_КоличествоПериодов КАК ВТ_КоличествоПериодов
+ГДЕ
+	aa.a * 1000 + bb.b * 100 + cc.c * 10 + dd.d &lt;= ВТ_КоличествоПериодов.КоличествоПериодов
+	И aa.a * 1000 + bb.b * 100 + cc.c * 10 + dd.d &lt;&gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ДОБАВИТЬКДАТЕ(&amp;НачалоПериода, ДЕНЬ, (ВТ_Итераторы.Значение - 1) * &amp;КоличествоДней) КАК НачалоПериода,
+	ВТ_Итераторы.Значение КАК НомерПериода
+ПОМЕСТИТЬ ВТ_НачалаПериодов
+ИЗ
+	ВТ_Итераторы КАК ВТ_Итераторы
+ГДЕ
+	ДОБАВИТЬКДАТЕ(&amp;НачалоПериода, ДЕНЬ, (ВТ_Итераторы.Значение - 1) * &amp;КоличествоДней) &lt;= &amp;КонецПериода
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВТ_НачалаПериодов.НачалоПериода КАК НачалоПериода,
+	ВЫБОР
+		КОГДА ДОБАВИТЬКДАТЕ(ВТ_НачалаПериодов.НачалоПериода, ДЕНЬ, &amp;КоличествоДней) &lt;= &amp;КонецПериода
+			ТОГДА ДОБАВИТЬКДАТЕ(ВТ_НачалаПериодов.НачалоПериода, ДЕНЬ, &amp;КоличествоДней)
+		ИНАЧЕ &amp;КонецПериода
+	КОНЕЦ КАК КонецПериода,
+	ВТ_НачалаПериодов.НомерПериода КАК НомерПериода
+ПОМЕСТИТЬ ВТ_Периоды
+ИЗ
+	ВТ_НачалаПериодов КАК ВТ_НачалаПериодов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СУММА(ВТ_Периоды.НомерПериода) КАК ОбщийКоэффициент,
+	МАКСИМУМ(ВТ_Периоды.НомерПериода) КАК КоличествоПериодов
+ПОМЕСТИТЬ ВТ_Коэффициент
+ИЗ
+	ВТ_Периоды КАК ВТ_Периоды
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Периоды.НачалоПериода КАК НачалоПериода,
+	ВТ_Периоды.КонецПериода КАК КонецПериода,
+	ВТ_Периоды.НомерПериода КАК НомерПериода,
+	ВТ_Коэффициент.ОбщийКоэффициент КАК ОбщийКоэффициент,
+	ВЫРАЗИТЬ(ВТ_Периоды.НомерПериода / ВТ_Коэффициент.ОбщийКоэффициент КАК ЧИСЛО(15, 2)) КАК Вес,
+	ВТ_Коэффициент.КоличествоПериодов КАК КоличествоПериодов
+ПОМЕСТИТЬ ВТ_ИтогиПериоды
+ИЗ
+	ВТ_Периоды КАК ВТ_Периоды,
+	ВТ_Коэффициент КАК ВТ_Коэффициент
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Периоды.НачалоПериода,
+	ВТ_Периоды.КонецПериода,
+	ВТ_Периоды.НомерПериода,
+	ВТ_Коэффициент.ОбщийКоэффициент,
+	ВТ_Коэффициент.КоличествоПериодов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ИС_Ozon_Продажи.offer_id КАК offer_id,
+	ИС_Ozon_Продажи.SKU КАК SKU,
+	ИС_Ozon_Продажи.Профиль КАК Профиль,
+	ИС_Ozon_Продажи.НомерОтправления КАК НомерОтправления,
+	ИС_Ozon_Продажи.Количество КАК Количество,
+	ИС_Ozon_Продажи.РеализованоНаСумму КАК Сумма,
+	ИС_Ozon_СоответствиеХарактеристик.Номенклатура КАК Номенклатура,
+	ИС_Ozon_СоответствиеХарактеристик.Характеристика КАК Характеристика,
+	ВЫБОР
+		КОГДА ИС_Ozon_Продажи.ДатаОтправления ЕСТЬ NULL
+				ИЛИ ИС_Ozon_Продажи.ДатаОтправления = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА ВЫБОР
+					КОГДА ИС_Ozon_Заказ.Дата ЕСТЬ NULL
+							ИЛИ ИС_Ozon_Заказ.Дата = ДАТАВРЕМЯ(1, 1, 1)
+						ТОГДА НАЧАЛОПЕРИОДА(&amp;НачалоПериода, ДЕНЬ)
+					ИНАЧЕ НАЧАЛОПЕРИОДА(ИС_Ozon_Заказ.Дата, ДЕНЬ)
+				КОНЕЦ
+		ИНАЧЕ ИС_Ozon_Продажи.ДатаОтправления
+	КОНЕЦ КАК ДатаПродажи,
+	ВЫБОР
+		КОГДА ИС_Ozon_Заказ.Дата ЕСТЬ NULL
+				ИЛИ ИС_Ozon_Заказ.Дата = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА "FBO"
+		ИНАЧЕ "FBS"
+	КОНЕЦ КАК ТипПродажи
+ПОМЕСТИТЬ ВТ_ПродажиОзон
+ИЗ
+	РегистрСведений.ИС_Ozon_Продажи КАК ИС_Ozon_Продажи
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИС_Ozon_СоответствиеХарактеристик КАК ИС_Ozon_СоответствиеХарактеристик
+		ПО (ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.Профиль В (&amp;Профиль))
+			И (ИС_Ozon_Продажи.offer_id = ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.offer_id
+				ИЛИ ИС_Ozon_Продажи.SKU = ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.sku_fbs
+				ИЛИ ИС_Ozon_Продажи.SKU = ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.sku_fbo)
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ИС_Ozon_Заказ КАК ИС_Ozon_Заказ
+		ПО ИС_Ozon_Продажи.НомерОтправления = ИС_Ozon_Заказ.Номер
+ГДЕ
+	ИС_Ozon_Продажи.Профиль В(&amp;Профиль)
+	И ИС_Ozon_Продажи.ДатаНачала &gt;= НАЧАЛОПЕРИОДА(&amp;НачалоПериода, МЕСЯЦ)
+	И НЕ ИС_Ozon_СоответствиеХарактеристик.Номенклатура ЕСТЬ NULL
+	И ИС_Ozon_Продажи.ДатаОкончания &lt;= КОНЕЦПЕРИОДА(&amp;КонецПериода, МЕСЯЦ)
+	И (ИС_Ozon_Продажи.ДатаОтправления МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			ИЛИ ИС_Ozon_Продажи.ДатаОтправления = ДАТАВРЕМЯ(1, 1, 1))
+	И ИС_Ozon_Продажи.Количество &gt; 0
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ИС_Ozon_Продажи.offer_id,
+	ИС_Ozon_Продажи.SKU,
+	ИС_Ozon_Продажи.Профиль,
+	ИС_Ozon_Продажи.НомерОтправления,
+	-ИС_Ozon_Продажи.ВозвратКоличество,
+	-ИС_Ozon_Продажи.ВозвращеноНаСумму,
+	ИС_Ozon_СоответствиеХарактеристик.Номенклатура,
+	ИС_Ozon_СоответствиеХарактеристик.Характеристика,
+	ВЫБОР
+		КОГДА ИС_Ozon_Продажи.ДатаОтправления ЕСТЬ NULL
+				ИЛИ ИС_Ozon_Продажи.ДатаОтправления = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА ВЫБОР
+					КОГДА ИС_Ozon_Заказ.Дата ЕСТЬ NULL
+							ИЛИ ИС_Ozon_Заказ.Дата = ДАТАВРЕМЯ(1, 1, 1)
+						ТОГДА НАЧАЛОПЕРИОДА(&amp;НачалоПериода, ДЕНЬ)
+					ИНАЧЕ НАЧАЛОПЕРИОДА(ИС_Ozon_Заказ.Дата, ДЕНЬ)
+				КОНЕЦ
+		ИНАЧЕ ИС_Ozon_Продажи.ДатаОтправления
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА ИС_Ozon_Заказ.Дата ЕСТЬ NULL
+				ИЛИ ИС_Ozon_Заказ.Дата = ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА "FBO"
+		ИНАЧЕ "FBS"
+	КОНЕЦ
+ИЗ
+	РегистрСведений.ИС_Ozon_Продажи КАК ИС_Ozon_Продажи
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИС_Ozon_СоответствиеХарактеристик КАК ИС_Ozon_СоответствиеХарактеристик
+		ПО (ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.Профиль В (&amp;Профиль))
+			И (ИС_Ozon_Продажи.offer_id = ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.offer_id
+				ИЛИ ИС_Ozon_Продажи.SKU = ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.sku_fbs
+				ИЛИ ИС_Ozon_Продажи.SKU = ИС_Ozon_СоответствиеХарактеристик.НоменклатураOzon.sku_fbo)
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ИС_Ozon_Заказ КАК ИС_Ozon_Заказ
+		ПО ИС_Ozon_Продажи.НомерОтправления = ИС_Ozon_Заказ.Номер
+ГДЕ
+	ИС_Ozon_Продажи.Профиль В(&amp;Профиль)
+	И ИС_Ozon_Продажи.ДатаНачала &gt;= НАЧАЛОПЕРИОДА(&amp;НачалоПериода, МЕСЯЦ)
+	И НЕ ИС_Ozon_СоответствиеХарактеристик.Номенклатура ЕСТЬ NULL
+	И ИС_Ozon_Продажи.ДатаОкончания &lt;= КОНЕЦПЕРИОДА(&amp;КонецПериода, МЕСЯЦ)
+	И (ИС_Ozon_Продажи.ДатаОтправления МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			ИЛИ ИС_Ozon_Продажи.ДатаОтправления = ДАТАВРЕМЯ(1, 1, 1))
+	И ИС_Ozon_Продажи.ВозвратКоличество &gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ПродажиОзон.offer_id КАК АртикулПоставщика,
+	СУММА(ВТ_ПродажиОзон.Количество) КАК Количество,
+	СУММА(ВТ_ПродажиОзон.Сумма) КАК Сумма,
+	ВТ_ПродажиОзон.Номенклатура КАК Номенклатура,
+	ВТ_ПродажиОзон.Характеристика КАК Характеристика,
+	ВТ_ИтогиПериоды.НомерПериода КАК НомерПериода,
+	ВТ_ИтогиПериоды.Вес КАК Вес,
+	ВТ_ИтогиПериоды.КоличествоПериодов КАК КоличествоПериодов
+ПОМЕСТИТЬ ВТ_СтрокиОзон
+ИЗ
+	ВТ_ПродажиОзон КАК ВТ_ПродажиОзон
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ИтогиПериоды КАК ВТ_ИтогиПериоды
+		ПО ВТ_ПродажиОзон.ДатаПродажи &gt; ВТ_ИтогиПериоды.НачалоПериода
+			И ВТ_ПродажиОзон.ДатаПродажи &lt; ВТ_ИтогиПериоды.КонецПериода
+ГДЕ
+	ВТ_ПродажиОзон.ДатаПродажи МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ПродажиОзон.offer_id,
+	ВТ_ПродажиОзон.Номенклатура,
+	ВТ_ПродажиОзон.Характеристика,
+	ВТ_ИтогиПериоды.НомерПериода,
+	ВТ_ИтогиПериоды.Вес,
+	ВТ_ИтогиПериоды.КоличествоПериодов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_СтрокиОзон.АртикулПоставщика КАК АртикулПоставщика,
+	ВТ_СтрокиОзон.Количество КАК Количество,
+	ВТ_СтрокиОзон.Сумма КАК Сумма,
+	ВТ_СтрокиОзон.Номенклатура КАК Номенклатура,
+	ВТ_СтрокиОзон.Характеристика КАК Характеристика,
+	ВТ_СтрокиОзон.НомерПериода КАК НомерПериода,
+	ВТ_СтрокиОзон.Вес КАК Вес,
+	ВТ_СтрокиОзон.КоличествоПериодов КАК КоличествоПериодов,
+	СУММА(ВЫРАЗИТЬ(ВТ_СтрокиОзон.Количество * ВТ_СтрокиОзон.Вес КАК ЧИСЛО(13, 2))) КАК ЛинейноеВзвешенноеКоличество
+ПОМЕСТИТЬ ВТ_ЛинейноеВзвешенноеСкользящее
+ИЗ
+	ВТ_СтрокиОзон КАК ВТ_СтрокиОзон
+
+СГРУППИРОВАТЬ ПО
+	ВТ_СтрокиОзон.АртикулПоставщика,
+	ВТ_СтрокиОзон.Количество,
+	ВТ_СтрокиОзон.Сумма,
+	ВТ_СтрокиОзон.Номенклатура,
+	ВТ_СтрокиОзон.Характеристика,
+	ВТ_СтрокиОзон.НомерПериода,
+	ВТ_СтрокиОзон.Вес,
+	ВТ_СтрокиОзон.КоличествоПериодов
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЛинейноеВзвешенноеСкользящее.АртикулПоставщика КАК АртикулПоставщика,
+	ВТ_ЛинейноеВзвешенноеСкользящее.Номенклатура КАК Номенклатура,
+	ВТ_ЛинейноеВзвешенноеСкользящее.Характеристика КАК Характеристика,
+	ВТ_ЛинейноеВзвешенноеСкользящее.Количество КАК ОбщееКоличествоПродаж,
+	ВТ_ЛинейноеВзвешенноеСкользящее.Сумма КАК СуммаПродаж,
+	(ВЫРАЗИТЬ(ВТ_ЛинейноеВзвешенноеСкользящее.Количество / РАЗНОСТЬДАТ(&amp;НачалоПериода, &amp;КонецПериода, ДЕНЬ) КАК ЧИСЛО(13, 2))) * &amp;КоличествоДней КАК СреднееПредполагаемое,
+	ВЫРАЗИТЬ(ВТ_ЛинейноеВзвешенноеСкользящее.Количество / ВТ_ЛинейноеВзвешенноеСкользящее.КоличествоПериодов КАК ЧИСЛО(13, 2)) КАК ПростоеСкользящееКоличество,
+	ВТ_ЛинейноеВзвешенноеСкользящее.ЛинейноеВзвешенноеКоличество КАК ЛинейноеВзвешенноеСкользящееКоличество
+ИЗ
+	ВТ_ЛинейноеВзвешенноеСкользящее КАК ВТ_ЛинейноеВзвешенноеСкользящее
+
+УПОРЯДОЧИТЬ ПО
+	Номенклатура,
+	ВТ_ЛинейноеВзвешенноеСкользящее.Характеристика</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ОбщееКоличествоПродаж</dataPath>
+		<expression>Сумма(ОбщееКоличествоПродаж)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СуммаПродаж</dataPath>
+		<expression>Сумма(СуммаПродаж)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>СреднееПредполагаемое</dataPath>
+		<expression>Сумма(СреднееПредполагаемое)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПростоеСкользящееКоличество</dataPath>
+		<expression>Сумма(ПростоеСкользящееКоличество)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЛинейноеВзвешенноеСкользящееКоличество</dataPath>
+		<expression>Сумма(ЛинейноеВзвешенноеСкользящееКоличество)</expression>
+	</totalField>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>Профиль</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Профиль</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ИС_WB_Профили</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>КоличествоДней</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество дней</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбщееКоличествоПродаж</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СуммаПродаж</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СреднееПредполагаемое</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПростоеСкользящееКоличество</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЛинейноеВзвешенноеСкользящееКоличество</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Профиль</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>15c74755-f9ad-4f64-b3e4-3862d0112903</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Профиль</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</dcscor:value>
+					<dcsset:userSettingID>241f54a7-7b19-4133-af67-c3d47f47d3d1</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>КоличествоДней</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:userSettingID>102a7d5e-4c48-4765-b5ca-6051ad7941a2</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество дней для прогноза</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Харктеристика</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Море</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Auto</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Размер</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Характеристика</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>АртикулПоставщика</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:filter>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>15e41635-40a9-4c21-9dcd-77bfcd62c7ea</dcsset:userSettingID>
+				</dcsset:filter>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>1481763d-c6a9-4fa6-b630-09fd6bbc6abc</dcsset:userSettingID>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>1a474229-f438-44e9-bef9-7f9249a8d217</dcsset:userSettingID>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>836d965c-9718-4d0e-821b-9bf5b73bc6bb</dcsset:userSettingID>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>МакетОформления</dcscor:parameter>
+						<dcscor:value xsi:type="xs:string">Море</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Склад</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:item>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>516bbda9-e7f4-4980-a479-67ed85846356</dcsset:userSettingID>
+				<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+				<dcsset:itemsUserSettingID>4c7fb90e-90a3-438d-a1dc-80bd137f6c4e</dcsset:itemsUserSettingID>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

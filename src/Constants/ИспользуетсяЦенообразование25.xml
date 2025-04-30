@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Constant uuid="148db8da-4351-4517-8eed-b0c0f3bb0b5c">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ИспользуетсяЦенообразование25" category="Manager">
+				<xr:TypeId>c797b47b-b3cf-4d7a-9029-08c64274cf5e</xr:TypeId>
+				<xr:ValueId>635bf18b-58c7-4156-9ef5-6f8617818429</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ИспользуетсяЦенообразование25" category="ValueManager">
+				<xr:TypeId>617ead75-e853-4517-b90a-c632d92c9443</xr:TypeId>
+				<xr:ValueId>96a44729-9b7d-4915-8a66-f0de02a51945</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ИспользуетсяЦенообразование25" category="ValueKey">
+				<xr:TypeId>2abff29f-bd8e-4fea-81f7-5c746d9fb44c</xr:TypeId>
+				<xr:ValueId>0a1684cd-0429-4f2b-8b85-6d1aac5e45d4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИспользуетсяЦенообразование25</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3050069b-2f6f-44ff-bf91-11a13ee9940e</ExtendedConfigurationObject>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="60bb564e-985e-4839-ae1b-37bfcd7df62c">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыЗаявокНаВозвратТоваровОтКлиентов" category="Ref">
+				<xr:TypeId>c7979d93-2f15-4a83-a207-769395ae9f89</xr:TypeId>
+				<xr:ValueId>a4fc9161-9b66-46e7-b784-884e62e46108</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыЗаявокНаВозвратТоваровОтКлиентов" category="Manager">
+				<xr:TypeId>8f6a7fd3-124a-4bd5-a402-d77d10e08abf</xr:TypeId>
+				<xr:ValueId>9819d984-a944-4950-a146-70e3a84ff24b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыЗаявокНаВозвратТоваровОтКлиентов" category="List">
+				<xr:TypeId>9b49582a-32f0-49fa-8288-a2c4e32faa94</xr:TypeId>
+				<xr:ValueId>aa5e0985-3b29-48bd-84d5-ec3c85de8dfc</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатусыЗаявокНаВозвратТоваровОтКлиентов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>4a00f8bf-c11c-464e-9f79-6dd21e3fa7b2</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="55364b90-26ac-4d4d-8350-a65d5a6b4561">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КВозврату</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>21c114aa-18c7-4c5d-97a9-d1ee488c5500</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AccumulationRegister uuid="3679c9ed-6254-4ae5-a2bc-b32caeb04111">
+		<InternalInfo>
+			<xr:GeneratedType name="AccumulationRegisterRecord.ТоварыВЯчейках" category="Record">
+				<xr:TypeId>d098cf39-d46c-477d-897a-18f1e51c25ad</xr:TypeId>
+				<xr:ValueId>102f2fe0-6910-46a0-bfe2-20e751c87e9b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterManager.ТоварыВЯчейках" category="Manager">
+				<xr:TypeId>cfa8463c-59a1-40ed-8494-9f6fe3265baa</xr:TypeId>
+				<xr:ValueId>27029021-8a8a-46f2-aece-cbf3d0e4ab4e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterSelection.ТоварыВЯчейках" category="Selection">
+				<xr:TypeId>3065e6c4-ac99-4f02-a33a-16300f7bfb2c</xr:TypeId>
+				<xr:ValueId>bf8987e2-2132-4bdf-bbde-3db1b8b1efbf</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterList.ТоварыВЯчейках" category="List">
+				<xr:TypeId>22b91c54-d9ba-41f2-96e1-eeb68157e330</xr:TypeId>
+				<xr:ValueId>57369584-5f34-4dd4-9fe8-f01d880cc7ef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordSet.ТоварыВЯчейках" category="RecordSet">
+				<xr:TypeId>af64abc3-aca4-4f06-a737-51e0803cce71</xr:TypeId>
+				<xr:ValueId>a91f5d76-6d08-4c75-8200-3ad81a24cace</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="AccumulationRegisterRecordKey.ТоварыВЯчейках" category="RecordKey">
+				<xr:TypeId>47ed99e0-05ef-471d-a259-cc859ddb190c</xr:TypeId>
+				<xr:ValueId>6eaee43f-a10b-4043-ab7b-f33569138a93</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТоварыВЯчейках</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>ea232e9c-2f7d-4380-8ea3-543f63d0a155</ExtendedConfigurationObject>
+			<RegisterType>Balance</RegisterType>
+		</Properties>
+		<ChildObjects/>
+	</AccumulationRegister>
+</MetaDataObject>

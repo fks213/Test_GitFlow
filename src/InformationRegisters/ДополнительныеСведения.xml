@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<InformationRegister uuid="2aa75e7f-487f-4a9a-9f0a-a82e0989b53d">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.ДополнительныеСведения" category="Record">
+				<xr:TypeId>81c34810-5225-4bfc-bfdf-e815de45e0ed</xr:TypeId>
+				<xr:ValueId>1be334aa-db89-4481-90d0-3545dd2df671</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.ДополнительныеСведения" category="Manager">
+				<xr:TypeId>04b1cd0a-3e5d-481c-a56c-290ee4dff040</xr:TypeId>
+				<xr:ValueId>cd4b5e95-6b18-49f1-9313-21de3eab9afa</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.ДополнительныеСведения" category="Selection">
+				<xr:TypeId>3ade9e54-daf6-4fd6-a86a-b188e81af67e</xr:TypeId>
+				<xr:ValueId>bf3d7668-aef6-4243-a73e-d594db41ac3b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.ДополнительныеСведения" category="List">
+				<xr:TypeId>16cfa5ab-6734-46fc-98aa-1d3b9b092f59</xr:TypeId>
+				<xr:ValueId>6b2eec9a-0e70-41ae-8aa9-ba253ade7736</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.ДополнительныеСведения" category="RecordSet">
+				<xr:TypeId>50ab1a3a-093a-4e36-bc4b-2eeb2f1f1fa0</xr:TypeId>
+				<xr:ValueId>81133915-6057-46d4-8902-12b277f9dedc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.ДополнительныеСведения" category="RecordKey">
+				<xr:TypeId>ab4a9ba4-27ba-4475-814a-9e0e852590f9</xr:TypeId>
+				<xr:ValueId>693219b2-865c-4e27-9b29-741c0d9e9b88</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.ДополнительныеСведения" category="RecordManager">
+				<xr:TypeId>8577e885-61a2-4abb-8dd2-6e55f946c00e</xr:TypeId>
+				<xr:ValueId>f73e0c0e-e63c-48fe-8a9f-3efd5aa22d17</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ДополнительныеСведения</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>3ad5d8a7-3071-46aa-aebf-306bdb67983b</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects/>
+	</InformationRegister>
+</MetaDataObject>

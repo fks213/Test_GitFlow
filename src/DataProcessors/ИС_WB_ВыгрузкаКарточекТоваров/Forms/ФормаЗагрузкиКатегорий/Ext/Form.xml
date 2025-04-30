@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Загрузка категорий товаров WildBerries</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗагрузитьСписокРодительскихКатегорий" id="40">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьСписокРодительскихКатегорий</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьСписокРодительскихКатегорийРасширеннаяПодсказка" id="41"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Профиль" id="1">
+			<DataPath>Профиль</DataPath>
+			<ContextMenu name="ПрофильКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПрофильРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="ГруппаКатегории" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа категории</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа категории</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКатегорииРасширеннаяПодсказка" id="37"/>
+			<ChildItems>
+				<Table name="РодительскаяКатегория" id="4">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<ReadOnly>true</ReadOnly>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>РодительскаяКатегория</DataPath>
+					<TitleTextColor>style:AccentColor</TitleTextColor>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="РодительскаяКатегорияКонтекстноеМеню" id="5"/>
+					<AutoCommandBar name="РодительскаяКатегорияКоманднаяПанель" id="6">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="КомандаВыбрать" id="38">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаВыбрать</CommandName>
+								<ExtendedTooltip name="КомандаВыбратьРасширеннаяПодсказка" id="39"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="РодительскаяКатегорияРасширеннаяПодсказка" id="7"/>
+					<SearchStringAddition name="РодительскаяКатегорияСтрокаПоиска" id="8">
+						<AdditionSource>
+							<Item>РодительскаяКатегория</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РодительскаяКатегорияСтрокаПоискаКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="РодительскаяКатегорияСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="РодительскаяКатегорияСостояниеПросмотра" id="11">
+						<AdditionSource>
+							<Item>РодительскаяКатегория</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РодительскаяКатегорияСостояниеПросмотраКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="РодительскаяКатегорияСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="РодительскаяКатегорияУправлениеПоиском" id="14">
+						<AdditionSource>
+							<Item>РодительскаяКатегория</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="РодительскаяКатегорияУправлениеПоискомКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="РодительскаяКатегорияУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">РодительскаяКатегорияВыбор</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="РодительскаяКатегорияНаименование" id="17">
+							<DataPath>РодительскаяКатегория.Наименование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РодительскаяКатегорияНаименованиеКонтекстноеМеню" id="18"/>
+							<ExtendedTooltip name="РодительскаяКатегорияНаименованиеРасширеннаяПодсказка" id="19"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="Категория" id="20">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<ReadOnly>true</ReadOnly>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Категория</DataPath>
+					<TitleTextColor>style:AccentColor</TitleTextColor>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="КатегорияКонтекстноеМеню" id="21"/>
+					<AutoCommandBar name="КатегорияКоманднаяПанель" id="22">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="КатегорияКомандаЗагрузить" id="42">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаЗагрузить</CommandName>
+								<ExtendedTooltip name="КатегорияКомандаЗагрузитьРасширеннаяПодсказка" id="43"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="КатегорияРасширеннаяПодсказка" id="23"/>
+					<SearchStringAddition name="КатегорияСтрокаПоиска" id="24">
+						<AdditionSource>
+							<Item>Категория</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КатегорияСтрокаПоискаКонтекстноеМеню" id="25"/>
+						<ExtendedTooltip name="КатегорияСтрокаПоискаРасширеннаяПодсказка" id="26"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="КатегорияСостояниеПросмотра" id="27">
+						<AdditionSource>
+							<Item>Категория</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="КатегорияСостояниеПросмотраКонтекстноеМеню" id="28"/>
+						<ExtendedTooltip name="КатегорияСостояниеПросмотраРасширеннаяПодсказка" id="29"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="КатегорияУправлениеПоиском" id="30">
+						<AdditionSource>
+							<Item>Категория</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="КатегорияУправлениеПоискомКонтекстноеМеню" id="31"/>
+						<ExtendedTooltip name="КатегорияУправлениеПоискомРасширеннаяПодсказка" id="32"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">КатегорияВыбор</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="КатегорияНаименование" id="33">
+							<DataPath>Категория.Наименование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КатегорияНаименованиеКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="КатегорияНаименованиеРасширеннаяПодсказка" id="35"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИС_WB_ВыгрузкаКарточекТоваров</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Профиль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_WB_Профили</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="РодительскаяКатегория" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Родительская категория</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="id" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Категория" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Категория</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Наименование" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="id" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаВыбрать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда выбрать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаВыбрать</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗагрузитьСписокРодительскихКатегорий" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список родительских категорий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить список родительских категорий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗагрузитьСписокРодительскихКатегорий</Action>
+			<Representation>TextPicture</Representation>
+			<AssociatedTableElementId xsi:type="xs:string">РодительскаяКатегория</AssociatedTableElementId>
+		</Command>
+		<Command name="КомандаЗагрузить" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда загрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveDown</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЗагрузить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

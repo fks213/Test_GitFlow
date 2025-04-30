@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаТело" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тело</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа тело</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<United>false</United>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаТелоРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаЛоготип" id="31">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа логотип</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа логотип</v8:content>
+						</v8:item>
+					</ToolTip>
+					<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЛоготипРасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<PictureDecoration name="Логотип" id="11">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Логотип</v8:content>
+								</v8:item>
+							</Title>
+							<Zoomable>true</Zoomable>
+							<ImageScale>80</ImageScale>
+							<Picture>
+								<xr:Ref>CommonPicture.ИС_МП_УМна1СЛого</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="ЛоготипКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ЛоготипРасширеннаяПодсказка" id="13"/>
+						</PictureDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа1" id="110">
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<PictureDecoration name="Декорация1" id="112">
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="113"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="114"/>
+						</PictureDecoration>
+						<UsualGroup name="ГруппаСодержание" id="33">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа содержание</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа содержание</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСодержаниеРасширеннаяПодсказка" id="34"/>
+							<ChildItems>
+								<LabelDecoration name="Заголовок" id="16">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="style:NormalTextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вас приветствует мастер установки обновлений "Управление Маркетплейсами на 1С"</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗаголовокКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="18"/>
+								</LabelDecoration>
+								<Pages name="ГруппаСтраницы" id="1">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа страницы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа страницы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="2"/>
+									<ChildItems>
+										<Page name="ГруппаСтраницаНачало" id="3">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страница начало</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страница начало</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<ExtendedTooltip name="ГруппаСтраницаНачалоРасширеннаяПодсказка" id="4"/>
+											<ChildItems>
+												<LabelDecoration name="ЗаголовокСтраницаНачало" id="43">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Проверка возможности обновления:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ЗаголовокСтраницаНачалоКонтекстноеМеню" id="44"/>
+													<ExtendedTooltip name="ЗаголовокСтраницаНачалоРасширеннаяПодсказка" id="45"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаИнформацияОбОбновлении" id="85">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа информация об обновлении</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа информация об обновлении</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаИнформацияОбОбновленииРасширеннаяПодсказка" id="86"/>
+													<ChildItems>
+														<PictureDecoration name="ДекорацияИнформацияОбОбновленииДа" id="93">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация достаточно прав да</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДекорацияИнформацияОбОбновленииДаКонтекстноеМеню" id="94"/>
+															<ExtendedTooltip name="ДекорацияИнформацияОбОбновленииДаРасширеннаяПодсказка" id="95"/>
+														</PictureDecoration>
+														<PictureDecoration name="ДекорацияИнформацияОбОбновленииНет" id="87">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация достаточно прав да</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДекорацияИнформацияОбОбновленииНетКонтекстноеМеню" id="88"/>
+															<ExtendedTooltip name="ДекорацияИнформацияОбОбновленииНетРасширеннаяПодсказка" id="89"/>
+														</PictureDecoration>
+														<LabelDecoration name="ДекорацияИнформацияОбОбновлении" id="90">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Информация об обновлении загружена</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияИнформацияОбОбновленииКонтекстноеМеню" id="91"/>
+															<ExtendedTooltip name="ДекорацияИнформацияОбОбновленииРасширеннаяПодсказка" id="92"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаДостаточноПрав" id="49">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа достаточно прав</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа достаточно прав</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаДостаточноПравРасширеннаяПодсказка" id="50"/>
+													<ChildItems>
+														<PictureDecoration name="ДекорацияДостаточноПравДа" id="54">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация достаточно прав да</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДекорацияДостаточноПравДаКонтекстноеМеню" id="55"/>
+															<ExtendedTooltip name="ДекорацияДостаточноПравДаРасширеннаяПодсказка" id="56"/>
+														</PictureDecoration>
+														<PictureDecoration name="ДекорацияДостаточноПравНет" id="57">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация достаточно прав да</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДекорацияДостаточноПравНетКонтекстноеМеню" id="58"/>
+															<ExtendedTooltip name="ДекорацияДостаточноПравНетРасширеннаяПодсказка" id="59"/>
+														</PictureDecoration>
+														<LabelDecoration name="ДекорацияДостаточноПрав" id="51">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Имеются все необходимые права</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияДостаточноПравКонтекстноеМеню" id="52"/>
+															<ExtendedTooltip name="ДекорацияДостаточноПравРасширеннаяПодсказка" id="53"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаОтсутствуюАктивныеСеансы" id="60">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа отсутствую активные сеансы</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа отсутствую активные сеансы</v8:content>
+														</v8:item>
+													</ToolTip>
+													<HorizontalStretch>true</HorizontalStretch>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаОтсутствуюАктивныеСеансыРасширеннаяПодсказка" id="61"/>
+													<ChildItems>
+														<PictureDecoration name="ДекорацияОтсутствуютАктивныеСеансыДа" id="68">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация достаточно прав да</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДекорацияОтсутствуютАктивныеСеансыДаКонтекстноеМеню" id="69"/>
+															<ExtendedTooltip name="ДекорацияОтсутствуютАктивныеСеансыДаРасширеннаяПодсказка" id="70"/>
+														</PictureDecoration>
+														<PictureDecoration name="ДекорацияОтсутствуютАктивныеСеансыНет" id="62">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация достаточно прав да</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДекорацияОтсутствуютАктивныеСеансыНетКонтекстноеМеню" id="63"/>
+															<ExtendedTooltip name="ДекорацияОтсутствуютАктивныеСеансыНетРасширеннаяПодсказка" id="64"/>
+														</PictureDecoration>
+														<LabelDecoration name="ДекорацияОтсутствуютАктивныеСеансы" id="65">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Отсутствуют активные сеансы</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияОтсутствуютАктивныеСеансыКонтекстноеМеню" id="66"/>
+															<ExtendedTooltip name="ДекорацияОтсутствуютАктивныеСеансыРасширеннаяПодсказка" id="67"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="ДекорацияНачалоКомментарий" id="82">
+													<ContextMenu name="ДекорацияНачалоКомментарийКонтекстноеМеню" id="83"/>
+													<ExtendedTooltip name="ДекорацияНачалоКомментарийРасширеннаяПодсказка" id="84"/>
+												</LabelDecoration>
+												<Button name="Проверить" id="23">
+													<Type>UsualButton</Type>
+													<Representation>PictureAndText</Representation>
+													<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+													<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+													<CommandName>Form.Command.Проверить</CommandName>
+													<Picture>
+														<xr:Ref>StdPicture.Refresh</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</Picture>
+													<ExtendedTooltip name="ПроверитьРасширеннаяПодсказка" id="24"/>
+												</Button>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаСтраницаИнформацияОбОбновлении" id="71">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страница информация об обновлении</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страница информация об обновлении</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаСтраницаИнформацияОбОбновленииРасширеннаяПодсказка" id="72"/>
+											<ChildItems>
+												<LabelField name="ДатаВыхода" id="73">
+													<DataPath>ДатаВыхода</DataPath>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ContextMenu name="ДатаВыходаКонтекстноеМеню" id="74"/>
+													<ExtendedTooltip name="ДатаВыходаРасширеннаяПодсказка" id="75"/>
+												</LabelField>
+												<LabelField name="Версия" id="76">
+													<DataPath>Версия</DataPath>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+													<ContextMenu name="ВерсияКонтекстноеМеню" id="77"/>
+													<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="78"/>
+												</LabelField>
+												<InputField name="Описание" id="79">
+													<DataPath>Описание</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<MultiLine>true</MultiLine>
+													<ContextMenu name="ОписаниеКонтекстноеМеню" id="80"/>
+													<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="81"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаСтраницаРезервнаяКопия" id="96">
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страница информация об обновлении</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаСтраницаРезервнаяКопияРасширеннаяПодсказка" id="97"/>
+											<ChildItems>
+												<CheckBoxField name="НаличиеРезервнойКопии" id="98">
+													<DataPath>НаличиеРезервнойКопии</DataPath>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Switcher</CheckBoxType>
+													<ContextMenu name="НаличиеРезервнойКопииКонтекстноеМеню" id="99"/>
+													<ExtendedTooltip name="НаличиеРезервнойКопииРасширеннаяПодсказка" id="100"/>
+													<Events>
+														<Event name="OnChange">НаличиеРезервнойКопииПриИзменении</Event>
+													</Events>
+												</CheckBoxField>
+											</ChildItems>
+										</Page>
+										<Page name="ГруппаСтраницаЗавершение" id="103">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страница завершение</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа страница завершение</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаСтраницаЗавершениеРасширеннаяПодсказка" id="104"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияЗавершение" id="105">
+													<TextColor>style:AccentColor</TextColor>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Установка успешно завершена, чтобы изменения вступили в силу необходимо перезапустить программу</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияЗавершениеКонтекстноеМеню" id="106"/>
+													<ExtendedTooltip name="ДекорацияЗавершениеРасширеннаяПодсказка" id="107"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПодвал" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа подвал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<CommandBar name="Группа3" id="41">
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<Button name="Прервать" id="39">
+							<Type>CommandBarButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.Прервать</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Stop</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ПрерватьРасширеннаяПодсказка" id="40"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<UsualGroup name="Группа2" id="37">
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<Button name="Далее" id="21">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<CommandName>Form.Command.Далее</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.MoveRight</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<PictureLocation>Right</PictureLocation>
+							<ExtendedTooltip name="ДалееРасширеннаяПодсказка" id="22"/>
+						</Button>
+						<Button name="Установить" id="101">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.Установить</CommandName>
+							<ExtendedTooltip name="УстановитьРасширеннаяПодсказка" id="102"/>
+						</Button>
+						<Button name="Перезапустить" id="108">
+							<Type>UsualButton</Type>
+							<Visible>false</Visible>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.Перезапустить</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Refresh</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ПерезапуститьРасширеннаяПодсказка" id="109"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="МожноОбновляться" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Можно обновляться</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МожемОбновлятся" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Можем обновлятся</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаВыхода" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата выхода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Версия" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Описание" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Guid" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Guid</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИзменяетСтруктуру" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменяет структуру</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НаличиеРезервнойКопии" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Я подтверждаю наличие резервной копии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеПрерываниеОбновления" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не прерывание обновления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Хеш" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хеш</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Далее" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Далее</Action>
+		</Command>
+		<Command name="Проверить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Проверить</Action>
+		</Command>
+		<Command name="Прервать" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прервать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прервать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПрерватьОбновление</Action>
+		</Command>
+		<Command name="Установить" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Установить</Action>
+		</Command>
+		<Command name="Перезапустить" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезапустить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перезапустить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Перезапустить</Action>
+		</Command>
+	</Commands>
+</Form>

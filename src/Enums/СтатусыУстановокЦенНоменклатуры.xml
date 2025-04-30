@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="43beba20-b199-4aa2-b2bb-f1be8efaa2fd">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыУстановокЦенНоменклатуры" category="Ref">
+				<xr:TypeId>8b0d8933-e53c-4a5e-9930-295a929e49b6</xr:TypeId>
+				<xr:ValueId>d301ffa9-5038-48e5-8009-c4e0b9da350f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыУстановокЦенНоменклатуры" category="Manager">
+				<xr:TypeId>ba3c755c-0d6f-4f83-85ed-8f5d5c163c0c</xr:TypeId>
+				<xr:ValueId>9de1f691-45b0-4383-b143-7b3d18570efd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыУстановокЦенНоменклатуры" category="List">
+				<xr:TypeId>358d7fab-eaeb-4952-8dfb-dd5d1e5511e4</xr:TypeId>
+				<xr:ValueId>42c886de-4b10-488b-896a-437ecd1197ac</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатусыУстановокЦенНоменклатуры</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a19648ee-0a2f-476d-976e-5c3a68b23978</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

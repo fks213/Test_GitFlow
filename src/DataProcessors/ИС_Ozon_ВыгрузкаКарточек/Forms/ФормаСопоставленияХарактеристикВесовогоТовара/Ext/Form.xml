@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandSet>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>CustomizeForm</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+		<ExcludedCommand>OpenFromMainServer</ExcludedCommand>
+		<ExcludedCommand>OpenFromStandaloneServer</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="2"/>
+			<ChildItems>
+				<LabelDecoration name="ОписаниеРаздела" id="3">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сопоставление характеристик для работы с весовыми товарами.</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Top</VerticalAlign>
+					<ContextMenu name="ОписаниеРазделаКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="ОписаниеРазделаExtendedTooltip" id="5"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияЗаголовка" id="6">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ДекорацияЗаголовкаКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ДекорацияЗаголовкаExtendedTooltip" id="8"/>
+				</LabelDecoration>
+				<CommandBar name="ГруппаСправка" id="9">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справка</v8:content>
+						</v8:item>
+					</Title>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="10"/>
+					<ChildItems>
+						<Button name="Справка" id="11">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.Help</CommandName>
+							<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+							<ExtendedTooltip name="СправкаExtendedTooltip" id="12"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ПризнакВесовогоТовара" id="19">
+			<DataPath>ВесовойТовар_ПризнакВесовогоТовара</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(Id=20577)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ContextMenu name="ПризнакВесовогоТовараКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ПризнакВесовогоТовараРасширеннаяПодсказка" id="21"/>
+			<Events>
+				<Event name="OnChange">ПризнакВесовогоТовараПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="МинимальныйВес" id="13">
+			<DataPath>ВесовойТовар_МинимальныйВес</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(Id=8933)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ContextMenu name="МинимальныйВесКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="МинимальныйВесРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">МинимальныйВесПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="МаксимальныйВес" id="16">
+			<DataPath>ВесовойТовар_МаксимальныйВес</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(Id=8934)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ContextMenu name="МаксимальныйВесКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="МаксимальныйВесРасширеннаяПодсказка" id="18"/>
+			<Events>
+				<Event name="OnChange">МаксимальныйВесПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="Квант" id="22">
+			<DataPath>ВесовойТовар_Квант</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(Id=20578)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ContextMenu name="КвантКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="КвантРасширеннаяПодсказка" id="24"/>
+			<Events>
+				<Event name="OnChange">КвантПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="МинимальноеКоличество" id="25">
+			<DataPath>ВесовойТовар_МинимальноеКоличество</DataPath>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>(Id=20579)</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ContextMenu name="МинимальноеКоличествоКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="МинимальноеКоличествоРасширеннаяПодсказка" id="27"/>
+			<Events>
+				<Event name="OnChange">МинимальноеКоличествоПриИзменении</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ВесовойТовар_МинимальныйВес" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минимальный вес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_Ozon_Характеристики</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВесовойТовар_МаксимальныйВес" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальный вес</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_Ozon_Характеристики</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВесовойТовар_ПризнакВесовогоТовара" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Признак весового товара</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_Ozon_Характеристики</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВесовойТовар_Квант" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Квант</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_Ozon_Характеристики</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВесовойТовар_МинимальноеКоличество" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минимальное количество</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_Ozon_Характеристики</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

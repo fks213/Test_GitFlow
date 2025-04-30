@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Catalog uuid="a18b2785-2962-475a-ba5b-9c20b59218f4">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ПричиныОтменыЗаказовКлиентов" category="Object">
+				<xr:TypeId>83162f9f-a007-4853-bc84-fe8580a23500</xr:TypeId>
+				<xr:ValueId>9a08d922-d924-4ecf-9bd0-0a3e0722e94f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ПричиныОтменыЗаказовКлиентов" category="Ref">
+				<xr:TypeId>65621a45-f7fc-4744-84f0-e5fcb1bc692c</xr:TypeId>
+				<xr:ValueId>375fe29c-c96f-4954-956f-c3b04e38340a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ПричиныОтменыЗаказовКлиентов" category="Selection">
+				<xr:TypeId>33c351a5-6012-43c9-baee-0435dd18d446</xr:TypeId>
+				<xr:ValueId>b5608743-eaa4-4f5c-884a-45a0dfe20851</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ПричиныОтменыЗаказовКлиентов" category="List">
+				<xr:TypeId>220351de-ea34-469e-bcf7-f2c493273a49</xr:TypeId>
+				<xr:ValueId>b3b9e0e8-edf2-4487-a29f-c759c9dafba8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ПричиныОтменыЗаказовКлиентов" category="Manager">
+				<xr:TypeId>632b4945-1dab-45b7-9e13-f4d43a9e8e69</xr:TypeId>
+				<xr:ValueId>37dc507e-38bd-4f58-8e7c-707b343d3a0b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПричиныОтменыЗаказовКлиентов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>7e89d765-f8bd-4aed-8e4d-980d32da50ff</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

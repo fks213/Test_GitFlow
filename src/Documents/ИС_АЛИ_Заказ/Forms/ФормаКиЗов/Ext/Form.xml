@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ВыгрузитьКиЗы" id="35">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыгрузитьКиЗы</CommandName>
+				<ExtendedTooltip name="ВыгрузитьКиЗыРасширеннаяПодсказка" id="36"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Профиль" id="43">
+			<DataPath>Профиль</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПрофильКонтекстноеМеню" id="44"/>
+			<ExtendedTooltip name="ПрофильРасширеннаяПодсказка" id="45"/>
+		</InputField>
+		<Table name="ДанныеКВыгрузке" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДанныеКВыгрузке</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеКВыгрузкеКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДанныеКВыгрузкеКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ДанныеКВыгрузкеРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ДанныеКВыгрузкеСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ДанныеКВыгрузке</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеКВыгрузкеСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ДанныеКВыгрузкеСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеКВыгрузкеСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ДанныеКВыгрузке</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеКВыгрузкеСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ДанныеКВыгрузкеСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеКВыгрузкеУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ДанныеКВыгрузке</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеКВыгрузкеУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДанныеКВыгрузкеУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="ДанныеКВыгрузкеВыгружен" id="37">
+					<DataPath>ДанныеКВыгрузке.Выгружен</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ДанныеКВыгрузкеВыгруженКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДанныеКВыгрузкеВыгруженРасширеннаяПодсказка" id="39"/>
+				</CheckBoxField>
+				<InputField name="ДанныеКВыгрузкеНомерЗаказа" id="49">
+					<DataPath>ДанныеКВыгрузке.Номер</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеКВыгрузкеНомерЗаказаКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ДанныеКВыгрузкеНомерЗаказаРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ДанныеКВыгрузкеНомерОтправления" id="14">
+					<DataPath>ДанныеКВыгрузке.НомерОтправления</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеКВыгрузкеНомерОтправленияКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДанныеКВыгрузкеНомерОтправленияРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ДанныеКВыгрузкеsku_id" id="17">
+					<DataPath>ДанныеКВыгрузке.sku_id</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеКВыгрузкеsku_idКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ДанныеКВыгрузкеsku_idРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ДанныеКВыгрузкеНоменклатура" id="23">
+					<DataPath>ДанныеКВыгрузке.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеКВыгрузкеНоменклатураКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ДанныеКВыгрузкеНоменклатураРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ДанныеКВыгрузкеХарактеристика" id="26">
+					<DataPath>ДанныеКВыгрузке.Характеристика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеКВыгрузкеХарактеристикаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ДанныеКВыгрузкеХарактеристикаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ДанныеКВыгрузкеШтрихкодУпаковки" id="29">
+					<DataPath>ДанныеКВыгрузке.ШтрихкодУпаковки</DataPath>
+					<Visible>false</Visible>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+						<xr:Value name="Role.ИС_МП_Администратор">true</xr:Value>
+					</UserVisible>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеКВыгрузкеШтрихкодУпаковкиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ДанныеКВыгрузкеШтрихкодУпаковкиРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ДанныеКВыгрузкеКодМаркировки" id="32">
+					<DataPath>ДанныеКВыгрузке.КодМаркировки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеКВыгрузкеКодМаркировкиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДанныеКВыгрузкеКодМаркировкиРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ДанныеКВыгрузкеexemplar_id" id="46">
+					<DataPath>ДанныеКВыгрузке.НомерСтр</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</Format>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ContextMenu name="ДанныеКВыгрузкеexemplar_idКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ДанныеКВыгрузкеexemplar_idРасширеннаяПодсказка" id="48"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ДанныеКВыгрузке" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные к выгрузке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерОтправления" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер отправления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="sku_id" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Иднетификатор вариации товара</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>20</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Характеристика" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Характеристика</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ХарактеристикиНоменклатуры</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ШтрихкодУпаковки" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Штрихкод упаковки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ШтрихкодыУпаковокТоваров</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КодМаркировки" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Код маркировки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Выгружен" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгружен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Количество" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерСтр" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер строки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>15</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номер" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер заказа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИднексАртикула" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Иднекс артикула</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Профиль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИС_WB_Профили</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыгрузитьКиЗы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить КИЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить ки зы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьКиЗы</Action>
+		</Command>
+	</Commands>
+</Form>

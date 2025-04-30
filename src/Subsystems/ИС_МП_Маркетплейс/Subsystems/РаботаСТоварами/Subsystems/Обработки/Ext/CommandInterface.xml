@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandsVisibility>
+		<Command name="DataProcessor.ИС_WB_ВыгрузкаКарточекТоваров.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:abb9ab89-8c71-404e-812b-44a421bf4ab4">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ИС_МП_Администратор">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ИС_WB_СозданиеНоменклатурыПоТоварамWildberries.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ИС_МП_Администратор">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="0:d723c876-cf4b-49a4-8a77-70287c49a3c8">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.ИС_МП_Администратор">false</xr:Value>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="0:6c1444e2-2fa9-45a6-be69-0166accb19fd">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="0:b5e06e7c-723f-4f5a-b079-52a8c4990571">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ИС_WB_СозданиеНоменклатурыПоТоварамWildberries.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ИС_WB_ВыгрузкаКарточекТоваров.Command.ОткрытьФормуПанельНавигации">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:4a099f64-f0d9-4725-817d-f50f03ae8f58">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>
