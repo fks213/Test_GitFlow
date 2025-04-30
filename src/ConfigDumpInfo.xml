@@ -838,7 +838,7 @@
 		<Metadata name="CommonModule.ВариантыОтчетовЛокализация" id="22001fc0-a151-4c3e-a8de-199710dbf681" configVersion="18390ffb7849503dcb94dbfcf7f7c65768627387"/>
 		<Metadata name="CommonModule.ВариантыОтчетовЛокализация.Module" id="22001fc0-a151-4c3e-a8de-199710dbf681.0" configVersion="b5c9317b4aa3cd00b28d8c7152a63d31168ecbfe"/>
 		<Metadata name="CommonModule.ИС_MP_ВыгрузкаКарточек" id="d0df54af-796c-480f-83d8-c14dafbaec79" configVersion="3090aecbd10b766960fdda9013fc4625b259609e"/>
-		<Metadata name="CommonModule.ИС_MP_ВыгрузкаКарточек.Module" id="d0df54af-796c-480f-83d8-c14dafbaec79.0" configVersion="5ff1665b9a95406c8a7958e1f379ccd7372bcc19"/>
+		<Metadata name="CommonModule.ИС_MP_ВыгрузкаКарточек.Module" id="d0df54af-796c-480f-83d8-c14dafbaec79.0" configVersion="47818f9feda3c8d88b03560daec05da0d51a0bcb"/>
 		<Metadata name="CommonModule.ИС_MP_ГенерацияШтрихкода" id="b97ca5b6-749a-425c-b1d9-09382191e629" configVersion="aa6ebf86e8c699b6ced76824f9f8ebba8d722638"/>
 		<Metadata name="CommonModule.ИС_MP_ГенерацияШтрихкода.Module" id="b97ca5b6-749a-425c-b1d9-09382191e629.0" configVersion="b6b2844c6755802a7b233bb39cb585a7c39c2ca1"/>
 		<Metadata name="CommonModule.ИС_MP_Маркировка" id="dd5339fa-0ab8-4f7c-ac3c-527a36744bd1" configVersion="733f406a84a89ad7043a1aff9031a90e45816c46"/>
