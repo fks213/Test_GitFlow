@@ -132,6 +132,12 @@
 									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
 									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
 								</InputField>
+								<InputField name="Реквизит1" id="306">
+									<DataPath>Реквизит1</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="Реквизит1КонтекстноеМеню" id="307"/>
+									<ExtendedTooltip name="Реквизит1РасширеннаяПодсказка" id="308"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<InputField name="Заказ" id="248">
@@ -936,6 +942,15 @@
 				<v8:DateQualifiers>
 					<v8:DateFractions>DateTime</v8:DateFractions>
 				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Реквизит1" id="10">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
